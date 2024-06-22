@@ -1,0 +1,35 @@
+.ant-input:focus {
+    border: 1px solid #FC7E06 !important;
+
+}
+
+.ant-input:hover {
+    border: 1px solid #FC7E06 !important;
+}
+
+.ant-input[type="time"]:focus {
+    border-color: #FC7E06 !important;
+
+}
+
+/* Customize the focus color for Ant Design Dropdown */
+.ant-select-focused .ant-select-selector {
+    border-color: #FC7E06 !important;
+
+}
+
+.ant-select-selector:hover {
+    border-color: #FC7E06 !important;
+
+}
+.time-picker{
+    border-color: #FC7E06 !important;
+}
+
+.ant-picker-now-btn{
+    color: #FC7E06 !important;
+}
+.ant-picker-ok button{
+    background-color: #FC7E06 !important;
+    color: white !important;
+}

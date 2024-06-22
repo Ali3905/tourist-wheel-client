@@ -1,0 +1,78 @@
+[
+    {
+      "id": 1,
+      "name": "Oranges",
+      "image": "https://source.unsplash.com/featured/?grocery,oranges"
+    },
+    {
+      "id": 2,
+      "name": "Pineapple",
+      "image": "https://source.unsplash.com/featured/?grocery,pineapple"
+    },
+    {
+      "id": 3,
+      "name": "Ground Beef",
+      "image": "https://source.unsplash.com/featured/?grocery,ground-beef"
+    },
+    {
+      "id": 4,
+      "name": "Cucumber",
+      "image": "https://source.unsplash.com/featured/?grocery,cucumber"
+    },
+    {
+      "id": 5,
+      "name": "Almond Milk",
+      "image": "https://source.unsplash.com/featured/?grocery,almond-milk"
+    },
+    {
+      "id": 6,
+      "name": "Blueberries",
+      "image": "https://source.unsplash.com/featured/?grocery,blueberries"
+    },
+    {
+      "id": 7,
+      "name": "Ground Turkey",
+      "image": "https://source.unsplash.com/featured/?grocery,ground-turkey"
+    },
+    {
+      "id": 8,
+      "name": "Chips",
+      "image": "https://source.unsplash.com/featured/?grocery,chips"
+    },
+    {
+      "id": 9,
+      "name": "Watermelon",
+      "image": "https://source.unsplash.com/featured/?grocery,watermelon"
+    },
+    {
+      "id": 10,
+      "name": "Hamburger Buns",
+      "image": "https://source.unsplash.com/featured/?grocery,hamburger-buns"
+    },
+    {
+      "id": 11,
+      "name": "Bell Peppers",
+      "image": "https://source.unsplash.com/featured/?grocery,bell-peppers"
+    },
+    {
+      "id": 12,
+      "name": "Avocado Toast",
+      "image": "https://source.unsplash.com/featured/?grocery,avocado-toast"
+    },
+    {
+      "id": 13,
+      "name": "Olive Oil",
+      "image": "https://source.unsplash.com/featured/?grocery,olive-oil"
+    },
+    {
+      "id": 14,
+      "name": "Soy Sauce",
+      "image": "https://source.unsplash.com/featured/?grocery,soy-sauce"
+    },
+    {
+      "id": 15,
+      "name": "Granola",
+      "image": "https://source.unsplash.com/featured/?grocery,granola"
+    }
+  ]
+  

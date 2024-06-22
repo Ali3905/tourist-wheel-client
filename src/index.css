@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Plus Jakarta sans';
+  src: url('./assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+
+#map{
+  all: unset !important;
+}
+.rounded-full{
+  border: none;
+}
+.ant-card-body{
+  padding-bottom: 0px !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

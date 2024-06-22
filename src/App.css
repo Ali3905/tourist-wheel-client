@@ -1,0 +1,7 @@
+.ant-input:focus {
+    border-color: #ff0000 !important; /* Replace with your desired color */
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2) !important;
+  }
+
+
+

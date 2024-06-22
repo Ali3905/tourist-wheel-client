@@ -1,0 +1,52 @@
+const unitOptions = ['kg', 'g', 'l', 'p'];
+const uploadOptions = ['Instant' , 'Delivery' , 'Cooling + Delivery']
+const productOwnerShip = ["Byzo" , "Seller 1" , "Seller 2"]
+export const singleInputLabel = [  
+  /// add product type too  
+  { name: 'productName', label: 'Product Name', type: 'text', rules: [{ required: true, message: 'Please enter the product name' }] },
+  { name: 'wholesaleRate', label: 'Whole Sale Rate', type: 'text', rules: [{ required: true, message: 'Please enter the wholesale rate' }] },
+  { name: 'byzoRate', label: 'Byzo Rate', type: 'text', rules: [{ required: true, message: 'Please enter the Byzo rate' }] },
+  { name: 'strikeRate', label: 'Striked Rate', type: 'text', rules: [{ required: true, message: 'Please enter the striked rate' }] },
+  { name: 'ExpairRange', label: 'Expair Range', type: 'date', rules: [{ required: true, message: 'Please enter the Expair Range' }] },
+  { name: 'productWeight', label: 'Product Weight', type: 'text', rules: [{ required: true, message: 'Please enter the product weight' }] },
+  { name: 'productDescription', label: 'Product Description', type: 'textarea', rules: [{ required: true, message: 'Please enter the product description' }] },
+  { name: 'UploadType', label: 'Upload Type', type: 'select', options: uploadOptions , rules: [{ required: true, message: 'Please select Upload Type' }] },
+  { name: 'catogery', label: 'select catogery', type: 'select', options: productOwnerShip , rules: [{ required: true, message: 'Please select ProductOwnerShip' }] },
+  { name: 'subcatogery', label: 'select subcatogery', type: 'select', options: productOwnerShip , rules: [{ required: true, message: 'Please select ProductOwnerShip' }] },
+  { name: 'productOwnerShip', label: 'productOwnerShip', type: 'select', options: productOwnerShip , rules: [{ required: true, message: 'Please select ProductOwnerShip' }] },
+  { name: 'unitType', label: 'Unit Type', type: 'select', options: unitOptions, rules: [{ required: true, message: 'Please select a unit type' }] },
+  { name: 'tags', label: 'Tags', type: 'text', rules: [{ required: true, message: 'Please enter tags for the product' }] }, 
+  { name: 'offerPercentage', label: 'Offer Percentage', type: 'text', rules: [{ required: true, message: 'Please enter the offer percentage' }] },
+  { name: 'stockCount', label: 'Product Stock Count', type: 'text', rules: [{ required: true, message: 'Please enter  stock count' }] },
+  { name: 'productImage', label: 'Product Image', type: 'upload', rules: [{ required: true, message: 'Please upload  image' }] },
+  { name: 'productImage', label: 'Product Image', type: 'upload', rules: [{ required: true, message: 'Please upload  image' }] },
+  { name: 'productImage', label: 'Product Image', type: 'upload', rules: [{ required: true, message: 'Please upload  image' }] },
+  { name: 'MetaURL', label: 'Meta URL', type: 'text', rules: [{ required: true, message: 'Please enter Meta URL for the product' }] }, 
+  { name: 'MetaTitle', label: 'Meta Title', type: 'text', rules: [{ required: true, message: 'Please enter Meta Title for the product' }] }, 
+  { name: 'MetaDiscription', label: 'Meta Discription', type: 'text', rules: [{ required: true, message: 'Please enter Meta Discription for the product' }] },
+  { name: 'MetaKeywords', label: 'Meta Keywords', type: 'text', rules: [{ required: true, message: 'Please enter Meta Keywords for the product' }] },  
+];
+
+export const multiInputLabel = [
+  { name: 'productName', label: 'Product Name', type: 'select', options: unitOptions },
+  { name: 'wholesaleRate', label: 'Whole Sale Rate', type: 'select', options: unitOptions, rules: [{ required: true, message: 'Please enter the wholesale rate' }] },
+  { name: 'byzoRate', label: 'Byzo Rate', type: 'select', options: unitOptions, rules: [{ required: true, message: 'Please enter the Byzo rate' }] },
+  { name: 'strikeRate', label: 'Striked Rate', type: 'select', options: unitOptions, rules: [{ required: true, message: 'Please enter the striked rate' }] },
+  { name: 'productWeight', label: 'Product Weight', type: 'select', options: unitOptions, rules: [{ required: true, message: 'Please enter  weight' }] },
+  { name: 'productDescription', label: 'Product Description', type: 'textarea', rules: [{ required: true, message: 'Please enter  description' }] },
+  { name: 'UploadType', label: 'Upload Type', type: 'select', options: uploadOptions , rules: [{ required: true, message: 'Please select Upload Type' }] },
+  { name: 'productOwnerShip', label: 'productOwnerShip', type: 'select', options: productOwnerShip , rules: [{ required: true, message: 'Please select ProductOwnerShip' }] },
+  { name: 'unitType', label: 'Unit Type', type: 'select', options: unitOptions, rules: [{ required: true, message: 'Please select a unit type' }] },
+  { name: 'tags', label: 'Tags', type: 'select', options: unitOptions, rules: [{ required: true, message: 'Please enter tags for ' }] },
+  { name: 'offerPercentage', label: 'Offer Percentage', type: 'select', options: unitOptions, rules: [{ required: true, message: 'Please enter the offer percentage' }] },
+  { name: 'stockCount', label: 'Product Stock Count', type: 'select', options: unitOptions, rules: [{ required: true, message: 'Please enter  stock count' }] },
+  { name: 'productImage', label: 'Product Image', type: 'upload', rules: [{ required: true, message: 'Please upload  image' }] },
+  { name: 'productImage', label: 'Product Image', type: 'upload', rules: [{ required: true, message: 'Please upload  image' }] },
+  { name: 'productImage', label: 'Product Image', type: 'upload', rules: [{ required: true, message: 'Please upload  image' }] },
+  { name: 'MetaURL', label: 'Meta URL', type: 'text', rules: [{ required: true, message: 'Please enter Meta URL for the product' }] }, 
+  { name: 'MetaTitle', label: 'Meta Title', type: 'text', rules: [{ required: true, message: 'Please enter Meta Title for the product' }] }, 
+  { name: 'MetaDiscription', label: 'Meta Discription', type: 'text', rules: [{ required: true, message: 'Please enter Meta Discription for the product' }] },
+  { name: 'MetaKeywords', label: 'Meta Keywords', type: 'text', rules: [{ required: true, message: 'Please enter Meta Keywords for the product' }] },  
+  { name: 'catogery', label: 'select catogery', type: 'select', options: productOwnerShip , rules: [{ required: true, message: 'Please select ProductOwnerShip' }] },
+  { name: 'subcatogery', label: 'select subcatogery', type: 'select', options: productOwnerShip , rules: [{ required: true, message: 'Please select ProductOwnerShip' }] },
+];

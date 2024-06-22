@@ -1,0 +1,23 @@
+.expandable{
+    min-height: 0;
+  }
+  .wrapper{
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms;
+  }
+  .wrapper.open{
+    grid-template-rows: 1fr;
+  }
+  .icon-active{
+    background-color: yellow !important;
+    border-radius: 50%;
+  }
+  .active-child{
+    color: #FC7E06;
+    background-color: #F4F2F1;
+  }
+  .active{
+    color: #FC7E06;
+  }

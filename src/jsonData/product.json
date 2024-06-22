@@ -1,0 +1,364 @@
+[
+    {
+      "id": 1,
+      "name": "Tomatoes",
+      "image": "https://source.unsplash.com/featured/?grocery,tomatoes",
+      "product_id": 23456,
+      "stock_count": 73,
+      "seller" : "byzo"
+      
+    },
+    {
+      "id": 2,
+      "name": "Bread",
+      "image": "https://source.unsplash.com/featured/?grocery,bread",
+      "product_id": 54321,
+      "stock_count": 42,
+      "seller" : "ahammed"
+    },
+    {
+      "id": 3,
+      "name": "Milk",
+      "image": "https://source.unsplash.com/featured/?grocery,milk",
+      "product_id": 98765,
+      "stock_count": 18,
+      "seller" : "rajesh"
+    },
+    {
+      "id": 4,
+      "name": "Eggs",
+      "image": "https://source.unsplash.com/featured/?grocery,eggs",
+      "product_id": 12345,
+      "stock_count": 89,
+      "seller" : "ramesh"
+    },
+    {
+      "id": 5,
+      "name": "Bananas",
+      "image": "https://source.unsplash.com/featured/?grocery,bananas",
+      "product_id": 67890,
+      "stock_count": 57,
+      "seller" : "lawrence"
+    },
+    {
+      "id": 6,
+      "name": "Chicken",
+      "image": "https://source.unsplash.com/featured/?grocery,chicken",
+      "product_id": 34567,
+      "stock_count": 66,
+      "seller" : "byzo"
+    },
+    {
+      "id": 7,
+      "name": "Cereal",
+      "image": "https://source.unsplash.com/featured/?grocery,cereal",
+      "product_id": 87654,
+      "stock_count": 30,
+      "seller" : "byzo"
+    },
+    {
+      "id": 8,
+      "name": "Cheese",
+      "image": "https://source.unsplash.com/featured/?grocery,cheese",
+      "product_id": 23456,
+      "stock_count": 91,
+      "seller" : "byzo"
+    },
+    {
+      "id": 9,
+      "name": "Pasta",
+      "image": "https://source.unsplash.com/featured/?grocery,pasta",
+      "product_id": 54321,
+      "stock_count": 14,
+      "seller" : "byzo"
+    },
+    {
+      "id": 10,
+      "name": "Apples",
+      "image": "https://source.unsplash.com/featured/?grocery,apples",
+      "product_id": 98765,
+      "stock_count": 72,
+      "seller" : "byzo"
+    },
+    {
+      "id": 11,
+      "name": "Coffee",
+      "image": "https://source.unsplash.com/featured/?grocery,coffee",
+      "product_id": 12345,
+      "stock_count": 38,
+      "seller" : "byzo"
+    },
+    {
+      "id": 12,
+      "name": "Orange Juice",
+      "image": "https://source.unsplash.com/featured/?grocery,orange-juice",
+      "product_id": 67890,
+      "stock_count": 50,
+      "seller" : "byzo"
+    },
+    {
+      "id": 13,
+      "name": "Salmon",
+      "image": "https://source.unsplash.com/featured/?grocery,salmon",
+      "product_id": 34567,
+      "stock_count": 82,
+      "seller" : "byzo"
+    },
+    {
+      "id": 14,
+      "name": "Potatoes",
+      "image": "https://source.unsplash.com/featured/?grocery,potatoes",
+      "product_id": 87654,
+      "stock_count": 23,
+      "seller" : "byzo"
+    },
+    {
+      "id": 15,
+      "name": "Yogurt",
+      "image": "https://source.unsplash.com/featured/?grocery,yogurt",
+      "product_id": 23456,
+      "stock_count": 64,
+      "seller" : "byzo"
+    },
+    {
+      "id": 16,
+      "name": "Spinach",
+      "image": "https://source.unsplash.com/featured/?grocery,spinach",
+      "product_id": 54321,
+      "stock_count": 77,
+      "seller" : "byzo"
+    },
+    {
+      "id": 17,
+      "name": "Soda",
+      "image": "https://source.unsplash.com/featured/?grocery,soda",
+      "product_id": 98765,
+      "stock_count": 45,
+      "seller" : "byzo"
+    },
+    {
+      "id": 18,
+      "name": "Ice Cream",
+      "image": "https://source.unsplash.com/featured/?grocery,ice-cream",
+      "product_id": 12345,
+      "stock_count": 94,
+      "seller" : "byzo"
+    },
+    {
+      "id": 19,
+      "name": "Onions",
+      "image": "https://source.unsplash.com/featured/?grocery,onions",
+      "product_id": 67890,
+      "stock_count": 27,
+      "seller" : "Jioonno"
+    },
+    {
+      "id": 20,
+      "name": "Peanut Butter",
+      "image": "https://source.unsplash.com/featured/?grocery,peanut-butter",
+      "product_id": 34567,
+      "stock_count": 60,
+      "seller" : "byzo"
+    },
+    {
+      "id": 21,
+      "name": "Chocolate",
+      "image": "https://source.unsplash.com/featured/?grocery,chocolate",
+      "product_id": 87654,
+      "stock_count": 33,
+      "seller" : "byzo"
+    },
+    {
+      "id": 22,
+      "name": "Broccoli",
+      "image": "https://source.unsplash.com/featured/?grocery,broccoli",
+      "product_id": 23456,
+      "stock_count": 79,
+      "seller" : "byzo"
+    },
+    {
+      "id": 23,
+      "name": "Rice",
+      "image": "https://source.unsplash.com/featured/?grocery,rice",
+      "product_id": 54321,
+      "stock_count": 13,
+      "seller" : "byzo"
+    },
+    {
+      "id": 24,
+      "name": "Carrots",
+      "image": "https://source.unsplash.com/featured/?grocery,carrots",
+      "product_id": 98765,
+      "stock_count": 52,
+      "seller" : "byzo"
+    },
+    {
+      "id": 25,
+      "name": "Avocado",
+      "image": "https://source.unsplash.com/featured/?grocery,avocado",
+      "product_id": 12345,
+      "stock_count": 85,
+      "seller" : "abison jose"
+    },
+    {
+      "id": 26,
+      "name": "Grapes",
+      "image": "https://source.unsplash.com/featured/?grocery,grapes",
+      "product_id": 67890,
+      "stock_count": 18,
+      "seller" : "shiju"
+    },
+    {
+      "id": 27,
+      "name": "Butter",
+      "image": "https://source.unsplash.com/featured/?grocery,butter",
+      "product_id": 34567,
+      "stock_count": 37,
+      "seller" : "byzo"
+    },
+    {
+      "id": 28,
+      "name": "Honey",
+      "image": "https://source.unsplash.com/featured/?grocery,honey",
+      "product_id": 87654,
+      "stock_count": 91,
+      "seller" : "sajin joe"
+    },
+    {
+      "id": 29,
+      "name": "Lettuce",
+      "image": "https://source.unsplash.com/featured/?grocery,lettuce",
+      "product_id": 23456,
+      "stock_count": 24,
+      "seller" : "vajin"
+    },
+    {
+      "id": 30,
+      "name": "Tea",
+      "image": "https://source.unsplash.com/featured/?grocery,tea",
+      "product_id": 54321,
+      "stock_count": 56,
+      "seller" : "sajin"
+    },
+    {
+      "id": 31,
+      "name": "Oranges",
+      "image": "https://source.unsplash.com/featured/?grocery,oranges",
+      "product_id": 78901,
+      "stock_count": 48,
+      "seller" : "byzo"
+    },
+    {
+      "id": 32,
+      "name": "Pineapple",
+      "image": "https://source.unsplash.com/featured/?grocery,pineapple",
+      "product_id": 23456,
+      "stock_count": 74,
+      "seller" : "byzo"
+    },
+    {
+      "id": 33,
+      "name": "Ground Beef",
+      "image": "https://source.unsplash.com/featured/?grocery,ground-beef",
+      "product_id": 54321,
+      "stock_count": 19,
+      "seller" : "byzo"
+    },
+    {
+      "id": 34,
+      "name": "Cucumber",
+      "image": "https://source.unsplash.com/featured/?grocery,cucumber",
+      "product_id": 78901,
+      "stock_count": 63,
+      "seller" : "byzo"
+    },
+    {
+      "id": 35,
+      "name": "Almond Milk",
+      "image": "https://source.unsplash.com/featured/?grocery,almond-milk",
+      "product_id": 23456,
+      "stock_count": 82,
+      "seller" : "byzo"
+    },
+    {
+      "id": 36,
+      "name": "Blueberries",
+      "image": "https://source.unsplash.com/featured/?grocery,blueberries",
+      "product_id": 54321,
+      "stock_count": 37,
+      "seller" : "byzo"
+    },
+    {
+      "id": 37,
+      "name": "Ground Turkey",
+      "image": "https://source.unsplash.com/featured/?grocery,ground-turkey",
+      "product_id": 78901,
+      "stock_count": 55,
+      "seller" : "byzo"
+    },
+    {
+      "id": 38,
+      "name": "Chips",
+      "image": "https://source.unsplash.com/featured/?grocery,chips",
+      "product_id": 23456,
+      "stock_count": 28,
+      "seller" : "byzo"
+    },
+    {
+      "id": 39,
+      "name": "Watermelon",
+      "image": "https://source.unsplash.com/featured/?grocery,watermelon",
+      "product_id": 54321,
+      "stock_count": 94,
+      "seller" : "byzo"
+    },
+    {
+      "id": 40,
+      "name": "Hamburger Buns",
+      "image": "https://source.unsplash.com/featured/?grocery,hamburger-buns",
+      "product_id": 78901,
+      "stock_count": 41,
+      "seller" : "byzo"
+    },
+    {
+      "id": 41,
+      "name": "Bell Peppers",
+      "image": "https://source.unsplash.com/featured/?grocery,bell-peppers",
+      "product_id": 23456,
+      "stock_count": 67,
+      "seller" : "byzo"
+    },
+    {
+      "id": 42,
+      "name": "Avocado Toast",
+      "image": "https://source.unsplash.com/featured/?grocery,avocado-toast",
+      "product_id": 54321,
+      "stock_count": 12,
+      "seller" : "byzo"
+    },
+    {
+      "id": 43,
+      "name": "Olive Oil",
+      "image": "https://source.unsplash.com/featured/?grocery,olive-oil",
+      "product_id": 78901,
+      "stock_count": 49,
+      "seller" : "byzo"
+    },
+    {
+      "id": 44,
+      "name": "Soy Sauce",
+      "image": "https://source.unsplash.com/featured/?grocery,soy-sauce",
+      "product_id": 23456,
+      "stock_count": 76,
+      "seller" : "byzo"
+    },
+    {
+      "id": 45,
+      "name": "Granola",
+      "image": "https://source.unsplash.com/featured/?grocery,granola",
+      "product_id": 54321,
+      "stock_count": 23,
+      "seller" : "byzo"
+    }
+  ]
+  
