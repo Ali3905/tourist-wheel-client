@@ -54,8 +54,8 @@ const CustomTable = ({ columns, data }) => {
         );
     };
 
-    const handleViewClick = (row) => {
-        console.log('View clicked for row:', row);
+    const handleViewClick = (col, row) => {
+        console.log('View clicked for :', col.label, "of" , row.name);
     };
     const HoverableTableRow = styled(MuiTableRow)`
     &:hover {
@@ -72,7 +72,6 @@ const CustomTable = ({ columns, data }) => {
                         {columns.map((column) => (
                             <TableCell key={column.id}>{column.label}</TableCell>
                         ))}
-
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -81,63 +80,70 @@ const CustomTable = ({ columns, data }) => {
                             {columns.map((column) => {
                                 return (
                                     <React.Fragment key={column.id}>
-                                        {column.label === "Products" ? (
+                                        {column.id === "photo" ?
                                             <TableCell>
-                                                <StyledViewButton onClick={() => handleViewClick(row)}>View</StyledViewButton>
-                                            </TableCell>
+                                                <StyledViewButton onClick={() => handleViewClick(column, row)}>View</StyledViewButton>
+                                            </TableCell> : column.id === "aadharCard" ?
+                                            <TableCell>
+                                                <StyledViewButton onClick={() => handleViewClick(column, row)}>View</StyledViewButton>
+                                            </TableCell> :
+                                        column.label === "Products" ? (
+                                        <TableCell>
+                                            <StyledViewButton onClick={() => handleViewClick(row)}>View</StyledViewButton>
+                                        </TableCell>
                                         ) : column.label === "Accept/Reject" ? (
-                                            <>
-                                                {renderStatusCell(row)}
-                                            </>
+                                        <>
+                                            {renderStatusCell(row)}
+                                        </>
                                         )
 
-                                            : column.label === "Transfter" ? (
-                                                <>
-                                                    {renderStatusCell(row)}
-                                                </>
-                                            ) : column.label === "Acceptance" ? (
+                                        : column.label === "Transfter" ? (
+                                        <>
+                                            {renderStatusCell(row)}
+                                        </>
+                                        ) : column.label === "Acceptance" ? (
 
-                                                <TableCell><Status status={row[column.id]} /></TableCell>
+                                        <TableCell><Status status={row[column.id]} /></TableCell>
 
-                                            ) 
-                                            : column.label === "Action" ? (
+                                        )
+                                        : column.label === "Action" ? (
 
-                                                <TableCell> <TableMenu/></TableCell>
+                                        <TableCell> <TableMenu /></TableCell>
 
-                                            )
-                                            
-                                            : column.label === "Partner" ? (
-                                              
-                                                <TableCell>< Highlate status={'Partner'}>{row[column.id]}</Highlate></TableCell>
-                                           
+                                        )
 
-                                            ): 
-                                            column.label === "Success" ? (
-                                              
-                                                <TableCell>< Highlate status={'Success'}>{row[column.id]}</Highlate></TableCell>
-                                           
+                                        : column.label === "Partner" ? (
 
-                                            )
-                                            : 
-                                            column.label === "Failure" ? (
-                                              
-                                                <TableCell>< Highlate status={'Failure'}>{row[column.id]}</Highlate></TableCell>
-                                           
+                                        <TableCell>< Highlate status={'Partner'}>{row[column.id]}</Highlate></TableCell>
 
-                                            ):(
-                                                column.id === "assigneeDetails" ? (
-                                                    <TableCell> <ClickPopover assignee={row[column.id]} /></TableCell>
-                                                ) : column.id === "orderTimings" ? (
-                                                    <TableCell> <HoverPopover timings={row[column.id]} /></TableCell>
 
-                                                ) : (
-                                                    <TableCell onClick={() => navigate(`/Details/${row.id}`)}>{row[column.id]}</TableCell>
-                                                )
+                                        ):
+                                        column.label === "Success" ? (
+
+                                        <TableCell>< Highlate status={'Success'}>{row[column.id]}</Highlate></TableCell>
+
+
+                                        )
+                                        :
+                                        column.label === "Failure" ? (
+
+                                        <TableCell>< Highlate status={'Failure'}>{row[column.id]}</Highlate></TableCell>
+
+
+                                        ):(
+                                        column.id === "assigneeDetails" ? (
+                                        <TableCell> <ClickPopover assignee={row[column.id]} /></TableCell>
+                                        ) : column.id === "orderTimings" ? (
+                                        <TableCell> <HoverPopover timings={row[column.id]} /></TableCell>
+
+                                        ) : (
+                                        <TableCell onClick={() => navigate(`/Details/${row.id}`)}>{row[column.id]}</TableCell>
+                                        )
                                             )}
                                     </React.Fragment>
                                 );
                             })}
-                     
+
 
                         </HoverableTableRow>
                     ))}

@@ -799,12 +799,6 @@ export const columnsForDrivers = [
     { id: 'vehicleType', label: 'Vehicle Type' },
     { id: 'city', label: 'City' },
     { id: 'mobileNumber', label: 'Mobile No' },
-
-    // { id: 'assigneeDetails', label: "Assignee" },
-    // { id: 'orderTimings', label: 'Progress' },
-    // { id: 'products', label: 'Products' },
-    // { id: 'orderValue', label: 'Value' },
-    // { id: 'ratings', label: 'Ratings' },
 ];
 
 export const dataForDrivers = [{
@@ -988,3 +982,335 @@ export const dataForDrivers = [{
     "city": "Zhangjiawo",
     "mobileNumber": "748 956 0121"
 }];
+
+export const columnsForCleaners = [
+    { id: 'name', label: 'Cleaner Name' },
+    { id: 'mobileNumber', label: 'Mobile No' },
+    { id: 'state', label: 'State' },
+    { id: 'city', label: 'City' },
+    { id : "aadharCard", label : "Aadhar Card"},
+    { id : "photo", label : "Cleaner Photo"},
+];
+
+export const dataForCleaners = [{
+    "name": "Lexy Filipputti",
+    "mobileNumber": "670-171-5592",
+    "state": "British Columbia",
+    "city": "Pemberton",
+    "aadharCard": "http://dummyimage.com/156x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/210x100.png/dddddd/000000"
+  }, {
+    "name": "Christos Limerick",
+    "mobileNumber": "723-463-4271",
+    "state": "Chihuahua",
+    "city": "Tierra y Libertad",
+    "aadharCard": "http://dummyimage.com/241x100.png/ff4444/ffffff",
+    "photo": "http://dummyimage.com/232x100.png/ff4444/ffffff"
+  }, {
+    "name": "Donn Dreakin",
+    "mobileNumber": "749-690-1547",
+    "state": "British Columbia",
+    "city": "Bowen Island",
+    "aadharCard": "http://dummyimage.com/126x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/158x100.png/cc0000/ffffff"
+  }, {
+    "name": "Artemas Gazzard",
+    "mobileNumber": "585-673-2266",
+    "state": "Chihuahua",
+    "city": "Hidalgo",
+    "aadharCard": "http://dummyimage.com/239x100.png/cc0000/ffffff",
+    "photo": "http://dummyimage.com/211x100.png/cc0000/ffffff"
+  }, {
+    "name": "Pearce Denkel",
+    "mobileNumber": "386-747-2735",
+    "state": "Guadeloupe",
+    "city": "Les Abymes",
+    "aadharCard": "http://dummyimage.com/225x100.png/cc0000/ffffff",
+    "photo": "http://dummyimage.com/127x100.png/ff4444/ffffff"
+  }, {
+    "name": "Emerson Compton",
+    "mobileNumber": "917-673-0060",
+    "state": "British Columbia",
+    "city": "Kitimat",
+    "aadharCard": "http://dummyimage.com/150x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/190x100.png/5fa2dd/ffffff"
+  }, {
+    "name": "Emmey Stower",
+    "mobileNumber": "687-344-4814",
+    "state": "British Columbia",
+    "city": "Chilliwack",
+    "aadharCard": "http://dummyimage.com/209x100.png/cc0000/ffffff",
+    "photo": "http://dummyimage.com/111x100.png/ff4444/ffffff"
+  }, {
+    "name": "Rosa Cherrison",
+    "mobileNumber": "542-644-9328",
+    "state": "Chihuahua",
+    "city": "Emiliano Zapata",
+    "aadharCard": "http://dummyimage.com/108x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/127x100.png/ff4444/ffffff"
+  }, {
+    "name": "Rouvin Loffhead",
+    "mobileNumber": "699-719-6945",
+    "state": "Guadeloupe",
+    "city": "Jarry",
+    "aadharCard": "http://dummyimage.com/227x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/119x100.png/dddddd/000000"
+  }, {
+    "name": "Marillin Salomon",
+    "mobileNumber": "269-413-1872",
+    "state": "Chihuahua",
+    "city": "Magisterial",
+    "aadharCard": "http://dummyimage.com/153x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/207x100.png/dddddd/000000"
+  }, {
+    "name": "Pammie Lempertz",
+    "mobileNumber": "986-314-4266",
+    "state": "Chihuahua",
+    "city": "Guadalupe",
+    "aadharCard": "http://dummyimage.com/158x100.png/cc0000/ffffff",
+    "photo": "http://dummyimage.com/229x100.png/ff4444/ffffff"
+  }, {
+    "name": "Marve Tremble",
+    "mobileNumber": "404-477-5293",
+    "state": "Georgia",
+    "city": "Cumming",
+    "aadharCard": "http://dummyimage.com/241x100.png/cc0000/ffffff",
+    "photo": "http://dummyimage.com/144x100.png/5fa2dd/ffffff"
+  }, {
+    "name": "Inge Brassill",
+    "mobileNumber": "351-616-7376",
+    "state": "British Columbia",
+    "city": "Abbotsford",
+    "aadharCard": "http://dummyimage.com/206x100.png/ff4444/ffffff",
+    "photo": "http://dummyimage.com/130x100.png/5fa2dd/ffffff"
+  }, {
+    "name": "Gunilla Taillant",
+    "mobileNumber": "404-294-8100",
+    "state": "Georgia",
+    "city": "Lawrenceville",
+    "aadharCard": "http://dummyimage.com/223x100.png/5fa2dd/ffffff",
+    "photo": "http://dummyimage.com/176x100.png/5fa2dd/ffffff"
+  }, {
+    "name": "Ewell Emmanuele",
+    "mobileNumber": "916-598-0263",
+    "state": "British Columbia",
+    "city": "Logan Lake",
+    "aadharCard": "http://dummyimage.com/142x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/162x100.png/ff4444/ffffff"
+  }]
+
+export const columnsForEmployees = [
+    { id: 'name', label: 'Employee Name' },
+    { id: 'mobileNumber', label: 'Mobile No' },
+    { id: 'state', label: 'State' },
+    { id: 'employeeType', label: 'Employee Type' },
+    { id : "aadharCard", label : "Aadhar Card"},
+    { id : "photo", label : "Employee Photo"},
+]
+
+export const dataForEmployees = [{
+    "name": "Sayres Larmet",
+    "mobileNumber": "106-716-4432",
+    "state": "British Columbia",
+    "employeeType": "MANAGER",
+    "aadharCard": "http://dummyimage.com/225x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/146x100.png/dddddd/000000"
+  }, {
+    "name": "Ted Brice",
+    "mobileNumber": "968-567-4570",
+    "state": "Guadeloupe",
+    "employeeType": "MANAGER",
+    "aadharCard": "http://dummyimage.com/176x100.png/cc0000/ffffff",
+    "photo": "http://dummyimage.com/217x100.png/dddddd/000000"
+  }, {
+    "name": "Maurise Janus",
+    "mobileNumber": "202-943-9454",
+    "state": "Abruzzi",
+    "employeeType": "TELECALLER",
+    "aadharCard": "http://dummyimage.com/138x100.png/5fa2dd/ffffff",
+    "photo": "http://dummyimage.com/186x100.png/ff4444/ffffff"
+  }, {
+    "name": "Rosco Ollerhad",
+    "mobileNumber": "850-321-4030",
+    "state": "British Columbia",
+    "employeeType": "ACCOUNTANT",
+    "aadharCard": "http://dummyimage.com/239x100.png/5fa2dd/ffffff",
+    "photo": "http://dummyimage.com/244x100.png/ff4444/ffffff"
+  }, {
+    "name": "Grantham Glazebrook",
+    "mobileNumber": "739-524-3569",
+    "state": "Chihuahua",
+    "employeeType": "TELECALLER",
+    "aadharCard": "http://dummyimage.com/130x100.png/ff4444/ffffff",
+    "photo": "http://dummyimage.com/174x100.png/5fa2dd/ffffff"
+  }, {
+    "name": "Georgetta Woodings",
+    "mobileNumber": "514-656-4455",
+    "state": "Chihuahua",
+    "employeeType": "OFFICE-BOY",
+    "aadharCard": "http://dummyimage.com/216x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/158x100.png/cc0000/ffffff"
+  }, {
+    "name": "Della Hawton",
+    "mobileNumber": "839-826-9843",
+    "state": "Guadeloupe",
+    "employeeType": "ACCOUNTANT",
+    "aadharCard": "http://dummyimage.com/228x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/155x100.png/ff4444/ffffff"
+  }, {
+    "name": "Noni McSwan",
+    "mobileNumber": "309-690-0435",
+    "state": "British Columbia",
+    "employeeType": "MANAGER",
+    "aadharCard": "http://dummyimage.com/114x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/124x100.png/ff4444/ffffff"
+  }, {
+    "name": "Doy Brideoke",
+    "mobileNumber": "850-382-7405",
+    "state": "British Columbia",
+    "employeeType": "ACCOUNTANT",
+    "aadharCard": "http://dummyimage.com/211x100.png/ff4444/ffffff",
+    "photo": "http://dummyimage.com/222x100.png/ff4444/ffffff"
+  }, {
+    "name": "Fernanda Trevear",
+    "mobileNumber": "706-237-3469",
+    "state": "Georgia",
+    "employeeType": "ACCOUNTANT",
+    "aadharCard": "http://dummyimage.com/118x100.png/cc0000/ffffff",
+    "photo": "http://dummyimage.com/217x100.png/cc0000/ffffff"
+  }, {
+    "name": "Guillema Lodden",
+    "mobileNumber": "770-911-9597",
+    "state": "Georgia",
+    "employeeType": "TELECALLER",
+    "aadharCard": "http://dummyimage.com/139x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/123x100.png/5fa2dd/ffffff"
+  }, {
+    "name": "Thomasine Ricciardi",
+    "mobileNumber": "587-397-3337",
+    "state": "British Columbia",
+    "employeeType": "TELECALLER",
+    "aadharCard": "http://dummyimage.com/107x100.png/5fa2dd/ffffff",
+    "photo": "http://dummyimage.com/201x100.png/dddddd/000000"
+  }, {
+    "name": "Jeralee Harrowing",
+    "mobileNumber": "715-642-0992",
+    "state": "British Columbia",
+    "employeeType": "CLEANER",
+    "aadharCard": "http://dummyimage.com/250x100.png/dddddd/000000",
+    "photo": "http://dummyimage.com/180x100.png/ff4444/ffffff"
+  }, {
+    "name": "Linette Ladell",
+    "mobileNumber": "750-806-1579",
+    "state": "Chihuahua",
+    "employeeType": "CLEANER",
+    "aadharCard": "http://dummyimage.com/172x100.png/5fa2dd/ffffff",
+    "photo": "http://dummyimage.com/118x100.png/cc0000/ffffff"
+  }, {
+    "name": "Alfie Hartshorn",
+    "mobileNumber": "134-108-9529",
+    "state": "British Columbia",
+    "employeeType": "OFFICE-BOY",
+    "aadharCard": "http://dummyimage.com/234x100.png/cc0000/ffffff",
+    "photo": "http://dummyimage.com/138x100.png/ff4444/ffffff"
+  }]
+
+  export const columnsForTechnicians = [
+    { id: 'name', label: 'Technician Name' },
+    { id: 'mobileNumber', label: 'Mobile No' },
+    { id: 'alternateNumber', label: 'Alternate Number' },
+    { id: 'technicianType', label: 'Technician Type' },
+    { id : "vehicleType", label : "Vehicle Type"},
+]
+
+  export const dataForTechnicians = [{
+    "name": "Imojean Kingaby",
+    "mobileNumber": "508-690-9082",
+    "alternateNumber": "283-793-6998",
+    "technicianType": "ELECTICIAN",
+    "vehicleType": "BUS"
+  }, {
+    "name": "Gert Matiasek",
+    "mobileNumber": "718-181-6150",
+    "alternateNumber": "214-195-8398",
+    "technicianType": "ELECTICIAN",
+    "vehicleType": "TRUCK"
+  }, {
+    "name": "Tobiah Elgar",
+    "mobileNumber": "907-850-1820",
+    "alternateNumber": "633-927-3263",
+    "technicianType": "BATTERYSERVICES",
+    "vehicleType": "BUS"
+  }, {
+    "name": "Dallon Stott",
+    "mobileNumber": "147-456-9520",
+    "alternateNumber": "407-183-6980",
+    "technicianType": "VEHICLEBODYREPAIR",
+    "vehicleType": "CAR"
+  }, {
+    "name": "Rafaela Lenthall",
+    "mobileNumber": "418-636-5108",
+    "alternateNumber": "210-359-3025",
+    "technicianType": "BATTERYSERVICES",
+    "vehicleType": "TRUCK"
+  }, {
+    "name": "Hamilton Bronot",
+    "mobileNumber": "782-786-7653",
+    "alternateNumber": "861-997-6589",
+    "technicianType": "SPAREPARTSHOP",
+    "vehicleType": "CAR"
+  }, {
+    "name": "Prudy Cheese",
+    "mobileNumber": "640-276-9968",
+    "alternateNumber": "514-730-1530",
+    "technicianType": "VEHICLEBODYREPAIR",
+    "vehicleType": "ALL"
+  }, {
+    "name": "Talia Chainey",
+    "mobileNumber": "181-589-8314",
+    "alternateNumber": "344-262-1686",
+    "technicianType": "VEHICLEBODYREPAIR",
+    "vehicleType": "CAR"
+  }, {
+    "name": "Avril Firk",
+    "mobileNumber": "356-742-0615",
+    "alternateNumber": "138-724-9882",
+    "technicianType": "ELECTICIAN",
+    "vehicleType": "CAR"
+  }, {
+    "name": "Bevon Cricket",
+    "mobileNumber": "756-954-6468",
+    "alternateNumber": "859-208-6855",
+    "technicianType": "VEHICLEBODYREPAIR",
+    "vehicleType": "BUS"
+  }, {
+    "name": "Dell Trownson",
+    "mobileNumber": "861-227-6231",
+    "alternateNumber": "278-163-9031",
+    "technicianType": "SPAREPARTSHOP",
+    "vehicleType": "TRUCK"
+  }, {
+    "name": "Rolf Clementi",
+    "mobileNumber": "722-754-8548",
+    "alternateNumber": "920-238-7924",
+    "technicianType": "ELECTICIAN",
+    "vehicleType": "BUS"
+  }, {
+    "name": "Meghann Charlson",
+    "mobileNumber": "914-699-0786",
+    "alternateNumber": "304-880-4469",
+    "technicianType": "BATTERYSERVICES",
+    "vehicleType": "CAR"
+  }, {
+    "name": "Eartha Franken",
+    "mobileNumber": "852-221-6728",
+    "alternateNumber": "373-479-0710",
+    "technicianType": "MECHANIC",
+    "vehicleType": "CAR"
+  }, {
+    "name": "Joscelin Cosely",
+    "mobileNumber": "524-434-4466",
+    "alternateNumber": "366-239-0137",
+    "technicianType": "MECHANIC",
+    "vehicleType": "CAR"
+  }]

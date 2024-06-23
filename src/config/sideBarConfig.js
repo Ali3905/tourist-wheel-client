@@ -26,9 +26,9 @@ export const SideMenuConfig = {
 		title: 'Staff Management',
 		icon: OrderManagement,
 		child: {
-			3: { title: 'Staff Details', path: '/Orders' },
+			3: { title: 'Employees List', path: '/employees' },
 			4: { title: 'Drivers List', path: '/drivers' },
-			5: { title: 'Cleaners List', path: '/orders/TransferOrders' },
+			5: { title: 'Cleaners List', path: '/cleaners' },
 		},
 	},
 	8: {
@@ -62,27 +62,6 @@ export const SideMenuConfig = {
 		
 		},
 	},
-	23: {
-		title: 'Technician Support',
-		icon: DiscountManagement,
-		child: {
-			24: {
-				title: 'Technician Support',
-				path: '/Refund',
-				icon: Refund,
-			},
-			// 25: {
-			// 	title: 'Revert refund Request',
-			// 	path: '/RevertRefund',
-			// 	icon: ThemeManageMent,
-			// },
-			// 26: {
-			// 	title: 'Payout Request',
-			// 	path: '/Payout',
-			// 	icon: ThemeManageMent,
-			// },
-		},
-	},
 	
 	27: {
 		title: 'Vehicle Documents',
@@ -109,4 +88,9 @@ export const SideMenuConfig = {
 		path: '/TransferHistory',
 		icon: Notification,
 	},
+	32 : {
+		title : "Technician Support",
+		path : "/technicians",
+
+	}
 };

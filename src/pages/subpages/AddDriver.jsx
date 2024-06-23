@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card } from '../../components/card';
 import { Form, Input, Select, Col, Row, Upload, Image, Button } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
+import { useOutletContext } from 'react-router-dom';
 // import Maps from "../../components/maps"
 const { Option } = Select;
 
@@ -23,24 +24,9 @@ const labels = [
 
 ];
 
-function AddVendor() {
-    const [branchImage, setBranchImage] = useState(null);
-    const [identityImage, setIdentityImage] = useState(null);
-    // const center = { lat: 8.560170275394498, lng: 77.23505676867723 };
-    const beforeUpload = (file, setImage) => {
-        setImage(file);
-        return false;
-    };
-
-    // const handleMapClick = (location) => {
-    //     setClickedLocation(location);
-    // };
-
-
-    // const removeImage = (setImage) => {
-    //     setImage(null);
-    // };
-
+function AddDriver() {
+    const { handleFileChange } = useOutletContext()
+    
     const formItemLayout = {
         labelCol: { span: 8 },
         wrapperCol: { span: 16 },
@@ -76,7 +62,7 @@ function AddVendor() {
                                 >
                                     {field.type === 'select' ? (
                                         <Select
-                                        placeholder="None"
+                                            placeholder="None"
                                         >
                                             {field.options.map((option) => (
                                                 <Option key={option} value={option}>
@@ -88,17 +74,16 @@ function AddVendor() {
                                         field.type === 'password' ? (
                                             <Input.Password />
                                         ) : field.type === 'file' ? <Form.Item
-                                        
-                                        // name="upload"
-                                        // label="Upload"
-                                        // valuePropName="fileList"
-                                        // getValueFromEvent={normFile}
-                                        // extra="longgggggggggggggggggggggggggggggggggg"
-                                      >
-                                        <Upload name="photo" listType="picture" beforeUpload={(file) => beforeUpload(file, setBranchImage)}>
-                                          <Button icon={<UploadOutlined />}>Click to upload</Button>
-                                        </Upload>
-                                      </Form.Item>  : (
+                                            // label={field.label}
+                                            name={field.name}
+                                            valuePropName="file"
+                                            // getValueFromEvent={e => e.target.files[0]}
+                                            onChange={e => handleFileChange(e, field.name)}
+                                        >
+                                            <Upload name={field.name} listType='picture' beforeUpload={e => false}>
+                                                <Button icon={<UploadOutlined />}>Click to upload</Button>
+                                            </Upload>
+                                        </Form.Item> : (
                                             <Input />
                                         )
                                     )}
@@ -215,4 +200,4 @@ function AddVendor() {
     );
 }
 
-export default AddVendor;
+export default AddDriver;

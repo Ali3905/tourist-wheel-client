@@ -15,6 +15,7 @@ import CustomTablePagination from '../../components/CustomTablePagination';
 
 const MainPage = () => {
   const location = useLocation();
+  const [files, setFiles] = useState({});
   const dispatch = useDispatch();
   const [form] = Form.useForm();
   const myindex = useSelector((state) => state.sidebar.selectedParentIndex);
@@ -75,13 +76,18 @@ const MainPage = () => {
     setPage(0);
   };
 
-
+  const handleFileChange = (e, fieldName) => {
+    setFiles({
+      ...files,
+      [fieldName]: e.target.files[0],
+    });
+  };
 
   const onFinish = (values) => {
     const isSuccess = true;
     const formsConfig = [
-      { id: 'form1', path: '/AddVendor', formType: 'vendor' },
-      { id: 'form2', path: '/AddAdmin', formType: 'admin' },
+      { id: 'form1', path: '/addDriver', formType: 'driver' },
+      { id: 'form2', path: '/addCleaner', formType: 'cleaner' },
       { id: 'form3', path: '/AddDeliveryPartner', formType: 'delivery partner' },
       { id: 'form4', path: '/CreateProduct', formType: 'product' },
       { id: 'form5', path: '/discount/Coupons', formType: 'coupons' },
@@ -96,10 +102,12 @@ const MainPage = () => {
     const successMessage = `${entityName} ${isSuccess ? 'added' : 'addition failed. Please try again.'} successfully!`;
     message[isSuccess ? 'success' : 'error'](successMessage);
 
+    const mergedValues = { ...values, ...files };
+
     // Dispatching form details
     dispatch(setFormDetails({
       formType: currentFormType,
-      values
+      values : mergedValues
     }));
   };
 
@@ -184,13 +192,11 @@ const MainPage = () => {
       }
 
       <Form form={form} layout="vertical" onFinish={onFinish} >
-        <Outlet />
-
+        <Outlet context={{ handleFileChange }} />
         <div style={{ display: 'flex', justifyContent: 'end' }}>
           <Styled.SubmitButton primary={myindex !== 21 && myindex !== 22 && myindex !== 24} htmlType="submit">
             Save
           </Styled.SubmitButton>
-
         </div>
       </Form>
     </>

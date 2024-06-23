@@ -24,47 +24,22 @@ const StyledButton = styled.button`
 function AddButton() {
   const dispatch = useDispatch();
   const selectedIndex = useSelector((state) => state.sidebar.selectedParentIndex);
-const naviagte = useNavigate()
+  const navigate = useNavigate()
   let buttonText = '';
   let isCondition11 = false;
 
   switch (selectedIndex) {
-    case 4: 
-     buttonText = "Add Driver";
-     break;
-    case 15:
-      buttonText = 'Add Employee';
+    case 3:
+      buttonText = "Add Employee";
       break;
-    case 16:
-      buttonText = 'Add Driver';
+    case 4:
+      buttonText = "Add Driver";
       break;
-    case 17:
-      buttonText = 'Add Cleaner';
+    case 5:
+      buttonText = "Add Cleaner"
       break;
-    case 18:
-      buttonText = 'Add Car';
-      break;
-    case 19:
-      buttonText = 'Add Car';
-      break;
-    case 20:
-      buttonText = 'Add Car';
-      break;
-    case 21:
-      buttonText = 'Add Car';
-      break;
-    case 22:
-      buttonText = 'Add Car';
-      break;
-    case 23:
-      buttonText = 'Add Car';
-      break;
-    case 24:
-      buttonText = 'Add Car';
-      break;
-    case 11:
-      buttonText = 'Add Product';
-      isCondition11 = true;
+    case 32:
+      buttonText = "Add Technician"
       break;
     default:
       buttonText = 'Add';
@@ -76,19 +51,15 @@ const naviagte = useNavigate()
   };
 
   const handleEvents = () => {
-    if (selectedIndex === 16) {
-      window.location.href = '/addVendor'; 
-    } else if(selectedIndex === 15){
-      window.location.href = '/addAdmin'; 
-            
-    }  else if(selectedIndex === 17){
-      naviagte('/AddSeller')
-      
-    }  else if(selectedIndex === 18){
-      naviagte('/AddDeliveryPartner')
-    } else if(selectedIndex === 4){
-      naviagte('/addVendor')
-    }else {
+    if (selectedIndex === 3) {
+      navigate("/addEmployee")
+    } else if (selectedIndex === 4) {
+      navigate('/addDriver')
+    } else if (selectedIndex === 5) {
+      navigate('/addCleaner')
+    } else if (selectedIndex === 32) {
+      navigate('/addTechnician')
+    } else {
       handleClosePopup();
     }
   };

@@ -34,6 +34,9 @@ import AdminStocks from "../pages/subpages/adminStocks.jsx";
 import AddProductForCatogries from "../pages/subpagesWithoutRoute/addProductForCatogries.jsx";
 import Details from '../pages/details.jsx'
 import Drivers from '../pages/staff/drivers.jsx';
+import Cleaners from '../pages/staff/Cleaners.jsx';
+import Employees from '../pages/staff/Employees.jsx';
+import Technicians from '../pages/Technicians.jsx';
 export const LoginRoutingConfig = [
 	{ name: 'Login', path: '/', component: <Login /> },
 ]
@@ -55,6 +58,21 @@ export const RoutingConfig = [
 		name: 'Drivers',
 		path: '/drivers',
 		component: <Drivers />,
+	},
+	{
+		name: 'Cleaners',
+		path: '/cleaners',
+		component: <Cleaners />,
+	},
+	{
+		name: 'Employees',
+		path: '/employees',
+		component: <Employees />,
+	},
+	{
+		name: 'Technicians',
+		path: '/technicians',
+		component: <Technicians />,
 	},
 	{ name: 'CodOrders', path: '/orders/CodOrders', component: <CodOrders /> },
 

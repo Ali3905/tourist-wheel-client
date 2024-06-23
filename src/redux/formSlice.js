@@ -9,7 +9,8 @@ const FormSlice = createSlice({
   initialState,
   reducers: {
     setFormDetails(state, action) {
-      state.FormDetails.push(action.payload); 
+      // state.FormDetails.push(action.payload);
+      console.log({ FormDetails : state.FormDetails, pay : action.payload });
     },
   },
 });
