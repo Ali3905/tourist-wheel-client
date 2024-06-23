@@ -38,6 +38,9 @@ function AddButton() {
     case 5:
       buttonText = "Add Cleaner"
       break;
+    case 8:
+      buttonText = "Add Vehicle"
+      break;
     case 32:
       buttonText = "Add Technician"
       break;
@@ -57,6 +60,8 @@ function AddButton() {
       navigate('/addDriver')
     } else if (selectedIndex === 5) {
       navigate('/addCleaner')
+    } else if (selectedIndex === 8) {
+      navigate('/addVehicle')
     } else if (selectedIndex === 32) {
       navigate('/addTechnician')
     } else {

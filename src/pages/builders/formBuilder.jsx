@@ -88,8 +88,8 @@ const MainPage = () => {
     const formsConfig = [
       { id: 'form1', path: '/addDriver', formType: 'driver' },
       { id: 'form2', path: '/addCleaner', formType: 'cleaner' },
-      { id: 'form3', path: '/AddDeliveryPartner', formType: 'delivery partner' },
-      { id: 'form4', path: '/CreateProduct', formType: 'product' },
+      { id: 'form3', path: '/addVehcile', formType: 'vehcile' },
+      { id: 'form4', path: '/addTechnician', formType: 'technician' },
       { id: 'form5', path: '/discount/Coupons', formType: 'coupons' },
       { id: 'form6', path: '/discount/Wallets', formType: 'wallets' },
       { id: 'form8', path: '/Refund', formType: 'refund' },

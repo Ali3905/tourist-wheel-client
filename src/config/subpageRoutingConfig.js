@@ -9,6 +9,7 @@ import AddSeller from "../pages/subpages/addSeller.jsx";
 import Notifications from '../pages/notifications';
 import AddCleaner from "../pages/subpages/AddCleaner.jsx";
 import AddTechnician from "../pages/subpages/AddTechnician.jsx";
+import AddVehicle from "../pages/subpages/AddVehicle.jsx";
 export const SubpageRoutingConfig = [
 	
 	{
@@ -30,6 +31,11 @@ export const SubpageRoutingConfig = [
 		name: 'Add Technician',
 		path: '/addTechnician',
 		component: <AddTechnician />,
+	},
+	{
+		name: 'Add Vehicle',
+		path: '/addVehicle',
+		component: <AddVehicle />,
 	},
 	{
 		name: 'Add Admin',

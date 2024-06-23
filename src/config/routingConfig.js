@@ -37,6 +37,7 @@ import Drivers from '../pages/staff/drivers.jsx';
 import Cleaners from '../pages/staff/Cleaners.jsx';
 import Employees from '../pages/staff/Employees.jsx';
 import Technicians from '../pages/Technicians.jsx';
+import Vehicles from '../pages/Vehicles/index.jsx';
 export const LoginRoutingConfig = [
 	{ name: 'Login', path: '/', component: <Login /> },
 ]
@@ -73,6 +74,11 @@ export const RoutingConfig = [
 		name: 'Technicians',
 		path: '/technicians',
 		component: <Technicians />,
+	},
+	{
+		name: 'Vehicles',
+		path: '/vehicles',
+		component: <Vehicles />,
 	},
 	{ name: 'CodOrders', path: '/orders/CodOrders', component: <CodOrders /> },
 

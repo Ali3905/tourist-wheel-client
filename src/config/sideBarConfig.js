@@ -33,14 +33,8 @@ export const SideMenuConfig = {
 	},
 	8: {
 		title: 'Vehicle Management',
+		path: "/vehicles",
 		icon: UserScreenManagement,
-		child: {
-			9: { title: 'Add Car', path: '/manage/CreateProducts' },
-			10: { title: 'Add Truck', path: '/manage/Createcatogery' },
-			11: { title: 'Add Tampo Travaler', path: '/manage/ListProducts' },
-			12: { title: 'Add Truck', path: '/manage/CreateBanners' },
-			13: { title: 'All Vehicles', path: '/manage/LandingPreview' },
-		},
 	},
 	14: {
 		title: 'Vehicle Transaction',

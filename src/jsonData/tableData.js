@@ -794,7 +794,6 @@ export const dummyDataForTransferHistory = [
 
 
 export const columnsForDrivers = [
-    { id: 'id', label: 'No' },
     { id: 'name', label: 'Driver Name' },
     { id: 'vehicleType', label: 'Vehicle Type' },
     { id: 'city', label: 'City' },
@@ -988,8 +987,8 @@ export const columnsForCleaners = [
     { id: 'mobileNumber', label: 'Mobile No' },
     { id: 'state', label: 'State' },
     { id: 'city', label: 'City' },
-    { id : "aadharCard", label : "Aadhar Card"},
-    { id : "photo", label : "Cleaner Photo"},
+    { id: "aadharCard", label: "Aadhar Card" },
+    { id: "photo", label: "Cleaner Photo" },
 ];
 
 export const dataForCleaners = [{
@@ -999,113 +998,113 @@ export const dataForCleaners = [{
     "city": "Pemberton",
     "aadharCard": "http://dummyimage.com/156x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/210x100.png/dddddd/000000"
-  }, {
+}, {
     "name": "Christos Limerick",
     "mobileNumber": "723-463-4271",
     "state": "Chihuahua",
     "city": "Tierra y Libertad",
     "aadharCard": "http://dummyimage.com/241x100.png/ff4444/ffffff",
     "photo": "http://dummyimage.com/232x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Donn Dreakin",
     "mobileNumber": "749-690-1547",
     "state": "British Columbia",
     "city": "Bowen Island",
     "aadharCard": "http://dummyimage.com/126x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/158x100.png/cc0000/ffffff"
-  }, {
+}, {
     "name": "Artemas Gazzard",
     "mobileNumber": "585-673-2266",
     "state": "Chihuahua",
     "city": "Hidalgo",
     "aadharCard": "http://dummyimage.com/239x100.png/cc0000/ffffff",
     "photo": "http://dummyimage.com/211x100.png/cc0000/ffffff"
-  }, {
+}, {
     "name": "Pearce Denkel",
     "mobileNumber": "386-747-2735",
     "state": "Guadeloupe",
     "city": "Les Abymes",
     "aadharCard": "http://dummyimage.com/225x100.png/cc0000/ffffff",
     "photo": "http://dummyimage.com/127x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Emerson Compton",
     "mobileNumber": "917-673-0060",
     "state": "British Columbia",
     "city": "Kitimat",
     "aadharCard": "http://dummyimage.com/150x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/190x100.png/5fa2dd/ffffff"
-  }, {
+}, {
     "name": "Emmey Stower",
     "mobileNumber": "687-344-4814",
     "state": "British Columbia",
     "city": "Chilliwack",
     "aadharCard": "http://dummyimage.com/209x100.png/cc0000/ffffff",
     "photo": "http://dummyimage.com/111x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Rosa Cherrison",
     "mobileNumber": "542-644-9328",
     "state": "Chihuahua",
     "city": "Emiliano Zapata",
     "aadharCard": "http://dummyimage.com/108x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/127x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Rouvin Loffhead",
     "mobileNumber": "699-719-6945",
     "state": "Guadeloupe",
     "city": "Jarry",
     "aadharCard": "http://dummyimage.com/227x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/119x100.png/dddddd/000000"
-  }, {
+}, {
     "name": "Marillin Salomon",
     "mobileNumber": "269-413-1872",
     "state": "Chihuahua",
     "city": "Magisterial",
     "aadharCard": "http://dummyimage.com/153x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/207x100.png/dddddd/000000"
-  }, {
+}, {
     "name": "Pammie Lempertz",
     "mobileNumber": "986-314-4266",
     "state": "Chihuahua",
     "city": "Guadalupe",
     "aadharCard": "http://dummyimage.com/158x100.png/cc0000/ffffff",
     "photo": "http://dummyimage.com/229x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Marve Tremble",
     "mobileNumber": "404-477-5293",
     "state": "Georgia",
     "city": "Cumming",
     "aadharCard": "http://dummyimage.com/241x100.png/cc0000/ffffff",
     "photo": "http://dummyimage.com/144x100.png/5fa2dd/ffffff"
-  }, {
+}, {
     "name": "Inge Brassill",
     "mobileNumber": "351-616-7376",
     "state": "British Columbia",
     "city": "Abbotsford",
     "aadharCard": "http://dummyimage.com/206x100.png/ff4444/ffffff",
     "photo": "http://dummyimage.com/130x100.png/5fa2dd/ffffff"
-  }, {
+}, {
     "name": "Gunilla Taillant",
     "mobileNumber": "404-294-8100",
     "state": "Georgia",
     "city": "Lawrenceville",
     "aadharCard": "http://dummyimage.com/223x100.png/5fa2dd/ffffff",
     "photo": "http://dummyimage.com/176x100.png/5fa2dd/ffffff"
-  }, {
+}, {
     "name": "Ewell Emmanuele",
     "mobileNumber": "916-598-0263",
     "state": "British Columbia",
     "city": "Logan Lake",
     "aadharCard": "http://dummyimage.com/142x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/162x100.png/ff4444/ffffff"
-  }]
+}]
 
 export const columnsForEmployees = [
     { id: 'name', label: 'Employee Name' },
     { id: 'mobileNumber', label: 'Mobile No' },
     { id: 'state', label: 'State' },
     { id: 'employeeType', label: 'Employee Type' },
-    { id : "aadharCard", label : "Aadhar Card"},
-    { id : "photo", label : "Employee Photo"},
+    { id: "aadharCard", label: "Aadhar Card" },
+    { id: "photo", label: "Employee Photo" },
 ]
 
 export const dataForEmployees = [{
@@ -1115,202 +1114,361 @@ export const dataForEmployees = [{
     "employeeType": "MANAGER",
     "aadharCard": "http://dummyimage.com/225x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/146x100.png/dddddd/000000"
-  }, {
+}, {
     "name": "Ted Brice",
     "mobileNumber": "968-567-4570",
     "state": "Guadeloupe",
     "employeeType": "MANAGER",
     "aadharCard": "http://dummyimage.com/176x100.png/cc0000/ffffff",
     "photo": "http://dummyimage.com/217x100.png/dddddd/000000"
-  }, {
+}, {
     "name": "Maurise Janus",
     "mobileNumber": "202-943-9454",
     "state": "Abruzzi",
     "employeeType": "TELECALLER",
     "aadharCard": "http://dummyimage.com/138x100.png/5fa2dd/ffffff",
     "photo": "http://dummyimage.com/186x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Rosco Ollerhad",
     "mobileNumber": "850-321-4030",
     "state": "British Columbia",
     "employeeType": "ACCOUNTANT",
     "aadharCard": "http://dummyimage.com/239x100.png/5fa2dd/ffffff",
     "photo": "http://dummyimage.com/244x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Grantham Glazebrook",
     "mobileNumber": "739-524-3569",
     "state": "Chihuahua",
     "employeeType": "TELECALLER",
     "aadharCard": "http://dummyimage.com/130x100.png/ff4444/ffffff",
     "photo": "http://dummyimage.com/174x100.png/5fa2dd/ffffff"
-  }, {
+}, {
     "name": "Georgetta Woodings",
     "mobileNumber": "514-656-4455",
     "state": "Chihuahua",
     "employeeType": "OFFICE-BOY",
     "aadharCard": "http://dummyimage.com/216x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/158x100.png/cc0000/ffffff"
-  }, {
+}, {
     "name": "Della Hawton",
     "mobileNumber": "839-826-9843",
     "state": "Guadeloupe",
     "employeeType": "ACCOUNTANT",
     "aadharCard": "http://dummyimage.com/228x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/155x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Noni McSwan",
     "mobileNumber": "309-690-0435",
     "state": "British Columbia",
     "employeeType": "MANAGER",
     "aadharCard": "http://dummyimage.com/114x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/124x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Doy Brideoke",
     "mobileNumber": "850-382-7405",
     "state": "British Columbia",
     "employeeType": "ACCOUNTANT",
     "aadharCard": "http://dummyimage.com/211x100.png/ff4444/ffffff",
     "photo": "http://dummyimage.com/222x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Fernanda Trevear",
     "mobileNumber": "706-237-3469",
     "state": "Georgia",
     "employeeType": "ACCOUNTANT",
     "aadharCard": "http://dummyimage.com/118x100.png/cc0000/ffffff",
     "photo": "http://dummyimage.com/217x100.png/cc0000/ffffff"
-  }, {
+}, {
     "name": "Guillema Lodden",
     "mobileNumber": "770-911-9597",
     "state": "Georgia",
     "employeeType": "TELECALLER",
     "aadharCard": "http://dummyimage.com/139x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/123x100.png/5fa2dd/ffffff"
-  }, {
+}, {
     "name": "Thomasine Ricciardi",
     "mobileNumber": "587-397-3337",
     "state": "British Columbia",
     "employeeType": "TELECALLER",
     "aadharCard": "http://dummyimage.com/107x100.png/5fa2dd/ffffff",
     "photo": "http://dummyimage.com/201x100.png/dddddd/000000"
-  }, {
+}, {
     "name": "Jeralee Harrowing",
     "mobileNumber": "715-642-0992",
     "state": "British Columbia",
     "employeeType": "CLEANER",
     "aadharCard": "http://dummyimage.com/250x100.png/dddddd/000000",
     "photo": "http://dummyimage.com/180x100.png/ff4444/ffffff"
-  }, {
+}, {
     "name": "Linette Ladell",
     "mobileNumber": "750-806-1579",
     "state": "Chihuahua",
     "employeeType": "CLEANER",
     "aadharCard": "http://dummyimage.com/172x100.png/5fa2dd/ffffff",
     "photo": "http://dummyimage.com/118x100.png/cc0000/ffffff"
-  }, {
+}, {
     "name": "Alfie Hartshorn",
     "mobileNumber": "134-108-9529",
     "state": "British Columbia",
     "employeeType": "OFFICE-BOY",
     "aadharCard": "http://dummyimage.com/234x100.png/cc0000/ffffff",
     "photo": "http://dummyimage.com/138x100.png/ff4444/ffffff"
-  }]
+}]
 
-  export const columnsForTechnicians = [
+export const columnsForTechnicians = [
     { id: 'name', label: 'Technician Name' },
     { id: 'mobileNumber', label: 'Mobile No' },
     { id: 'alternateNumber', label: 'Alternate Number' },
     { id: 'technicianType', label: 'Technician Type' },
-    { id : "vehicleType", label : "Vehicle Type"},
+    { id: "vehicleType", label: "Vehicle Type" },
 ]
 
-  export const dataForTechnicians = [{
+export const dataForTechnicians = [{
     "name": "Imojean Kingaby",
     "mobileNumber": "508-690-9082",
     "alternateNumber": "283-793-6998",
     "technicianType": "ELECTICIAN",
     "vehicleType": "BUS"
-  }, {
+}, {
     "name": "Gert Matiasek",
     "mobileNumber": "718-181-6150",
     "alternateNumber": "214-195-8398",
     "technicianType": "ELECTICIAN",
     "vehicleType": "TRUCK"
-  }, {
+}, {
     "name": "Tobiah Elgar",
     "mobileNumber": "907-850-1820",
     "alternateNumber": "633-927-3263",
     "technicianType": "BATTERYSERVICES",
     "vehicleType": "BUS"
-  }, {
+}, {
     "name": "Dallon Stott",
     "mobileNumber": "147-456-9520",
     "alternateNumber": "407-183-6980",
     "technicianType": "VEHICLEBODYREPAIR",
     "vehicleType": "CAR"
-  }, {
+}, {
     "name": "Rafaela Lenthall",
     "mobileNumber": "418-636-5108",
     "alternateNumber": "210-359-3025",
     "technicianType": "BATTERYSERVICES",
     "vehicleType": "TRUCK"
-  }, {
+}, {
     "name": "Hamilton Bronot",
     "mobileNumber": "782-786-7653",
     "alternateNumber": "861-997-6589",
     "technicianType": "SPAREPARTSHOP",
     "vehicleType": "CAR"
-  }, {
+}, {
     "name": "Prudy Cheese",
     "mobileNumber": "640-276-9968",
     "alternateNumber": "514-730-1530",
     "technicianType": "VEHICLEBODYREPAIR",
     "vehicleType": "ALL"
-  }, {
+}, {
     "name": "Talia Chainey",
     "mobileNumber": "181-589-8314",
     "alternateNumber": "344-262-1686",
     "technicianType": "VEHICLEBODYREPAIR",
     "vehicleType": "CAR"
-  }, {
+}, {
     "name": "Avril Firk",
     "mobileNumber": "356-742-0615",
     "alternateNumber": "138-724-9882",
     "technicianType": "ELECTICIAN",
     "vehicleType": "CAR"
-  }, {
+}, {
     "name": "Bevon Cricket",
     "mobileNumber": "756-954-6468",
     "alternateNumber": "859-208-6855",
     "technicianType": "VEHICLEBODYREPAIR",
     "vehicleType": "BUS"
-  }, {
+}, {
     "name": "Dell Trownson",
     "mobileNumber": "861-227-6231",
     "alternateNumber": "278-163-9031",
     "technicianType": "SPAREPARTSHOP",
     "vehicleType": "TRUCK"
-  }, {
+}, {
     "name": "Rolf Clementi",
     "mobileNumber": "722-754-8548",
     "alternateNumber": "920-238-7924",
     "technicianType": "ELECTICIAN",
     "vehicleType": "BUS"
-  }, {
+}, {
     "name": "Meghann Charlson",
     "mobileNumber": "914-699-0786",
     "alternateNumber": "304-880-4469",
     "technicianType": "BATTERYSERVICES",
     "vehicleType": "CAR"
-  }, {
+}, {
     "name": "Eartha Franken",
     "mobileNumber": "852-221-6728",
     "alternateNumber": "373-479-0710",
     "technicianType": "MECHANIC",
     "vehicleType": "CAR"
-  }, {
+}, {
     "name": "Joscelin Cosely",
     "mobileNumber": "524-434-4466",
     "alternateNumber": "366-239-0137",
     "technicianType": "MECHANIC",
     "vehicleType": "CAR"
-  }]
+}]
+
+export const columnsForVehicles = [
+    { id: 'number', label: 'Number' },
+    { id: 'seatingCapacity', label: 'Seating Capacity' },
+    { id: 'model', label: 'Model' },
+    { id: 'bodyName', label: 'Body' },
+    { id: 'contactNumber', label: 'Contact' },
+    { id: 'location', label: 'Location' },
+    { id: "type", label: "Type" },
+    { id: "isForRent", label: "For Rent" },
+    { id: "isForSell", label: "For Sell" },
+    { id: "photos", label: "Photos" },
+]
+
+export const dataForVehicles = [{
+    "number": "5GAKVCKD6FJ821832",
+    "seatingCapacity": "69-686-0106",
+    "model": 2010,
+    "bodyName": "Maserati",
+    "chassIsBrand": "car",
+    "location": "Apt 1512",
+    "contactNumber": "333-724-4212",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": true,
+    "isForSell": true,
+    "type": "TRUCK"
+}, {
+    "number": "1D7CE5GK7AS309236",
+    "seatingCapacity": "24-965-0188",
+    "model": 2006,
+    "bodyName": "Toyota",
+    "chassIsBrand": "car",
+    "location": "Room 428",
+    "contactNumber": "527-839-7527",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": false,
+    "isForSell": false,
+    "type": "TAMPO"
+}, {
+    "number": "1N6AF0KX6FN288824",
+    "seatingCapacity": "71-469-2728",
+    "model": 1991,
+    "bodyName": "Buick",
+    "chassIsBrand": "car",
+    "location": "Suite 62",
+    "contactNumber": "619-417-2763",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": true,
+    "isForSell": true,
+    "type": "TAMPO"
+}, {
+    "number": "5UXFG43588L945131",
+    "seatingCapacity": "63-661-8540",
+    "model": 2001,
+    "bodyName": "Honda",
+    "chassIsBrand": "car",
+    "location": "PO Box 44629",
+    "contactNumber": "304-118-4389",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": false,
+    "isForSell": false,
+    "type": "CAR"
+}, {
+    "number": "WAUEH78E96A247623",
+    "seatingCapacity": "80-150-9004",
+    "model": 2002,
+    "bodyName": "GMC",
+    "chassIsBrand": "car",
+    "location": "19th Floor",
+    "contactNumber": "529-183-5047",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": true,
+    "isForSell": false,
+    "type": "TAMPO"
+}, {
+    "number": "3GYEK62N94G898444",
+    "seatingCapacity": "05-749-6091",
+    "model": 1997,
+    "bodyName": "Chrysler",
+    "chassIsBrand": "car",
+    "location": "Suite 10",
+    "contactNumber": "115-770-5195",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": true,
+    "isForSell": true,
+    "type": "CAR"
+}, {
+    "number": "WAUHE98P29A614918",
+    "seatingCapacity": "62-864-9997",
+    "model": 2009,
+    "bodyName": "Ford",
+    "chassIsBrand": "car",
+    "location": "Suite 96",
+    "contactNumber": "986-254-1038",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": true,
+    "isForSell": true,
+    "type": "TAMPO"
+}, {
+    "number": "SCFHDDBT7EG716626",
+    "seatingCapacity": "88-180-3639",
+    "model": 2002,
+    "bodyName": "Dodge",
+    "chassIsBrand": "car",
+    "location": "PO Box 20266",
+    "contactNumber": "650-887-1042",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": true,
+    "isForSell": true,
+    "type": "CAR"
+}, {
+    "number": "1G6DP1E34C0333413",
+    "seatingCapacity": "36-402-8616",
+    "model": 1986,
+    "bodyName": "Suzuki",
+    "chassIsBrand": "car",
+    "location": "Suite 36",
+    "contactNumber": "170-835-3372",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": false,
+    "isForSell": false,
+    "type": "TRUCK"
+}, {
+    "number": "3C63D3HL8CG059788",
+    "seatingCapacity": "30-662-5277",
+    "model": 1999,
+    "bodyName": "Jeep",
+    "chassIsBrand": "car",
+    "location": "14th Floor",
+    "contactNumber": "110-370-3132",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": true,
+    "isForSell": false,
+    "type": "BUS"
+}, {
+    "number": "WAUKF78EX6A688461",
+    "seatingCapacity": "25-744-5196",
+    "model": 1994,
+    "bodyName": "Oldsmobile",
+    "chassIsBrand": "car",
+    "location": "Room 1537",
+    "contactNumber": "576-810-6902",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": true,
+    "isForSell": true,
+    "type": "TRUCK"
+}, {
+    "number": "WAUK2AFD8FN276440",
+    "seatingCapacity": "86-793-3945",
+    "model": 2008,
+    "bodyName": "Infiniti",
+    "chassIsBrand": "car",
+    "location": "Apt 1823",
+    "contactNumber": "883-441-6545",
+    "photos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
+    "isForRent": false,
+    "isForSell": true,
+    "type": "TAMPO"
+}]
