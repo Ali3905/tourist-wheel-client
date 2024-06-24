@@ -80,7 +80,7 @@ const CustomTable = ({ columns, data }) => {
                             {columns.map((column) => {
                                 return (
                                     <React.Fragment key={column.id}>
-                                        {column.id === "photo" || column.id === "photos" ?
+                                        {column.id === "photo" || column.id === "photos" || column.id === "afterJourneyPhotos" || column.id === "beforeJourneyPhotos" ?
                                             <TableCell>
                                                 <StyledViewButton onClick={() => handleViewClick(column, row)}>View</StyledViewButton>
                                             </TableCell> : column.id === "aadharCard" ?
@@ -99,7 +99,9 @@ const CustomTable = ({ columns, data }) => {
                                                     <>
                                                         {renderStatusCell(row)}
                                                     </>
-                                                )
+                                                ) : typeof row[column.id] === 'object' ? 
+                                                <TableCell onClick={() => navigate(`/Details/${row.id}`)}>{row?.[column.id]?.[column.fieldId]}</TableCell>
+                        
                                                     : column.label === "Transfter" ? (
                                                         <>
                                                             {renderStatusCell(row)}

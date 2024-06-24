@@ -1,20 +1,30 @@
 // store.js
 import { configureStore } from '@reduxjs/toolkit';
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
-import rootReducer from './rootReducer/reducer';
+import headingReducer from './redux/headingSlice';
+import sidebarReducer from './redux/sidebarSlice';
+import popupReducer from './redux/popupSlice'; 
+import statusReducer from './redux/statusSlice';
+import selectedProductsReducer from './redux/productSlice'; 
+import FormDetailsReducer from './redux/formSlice'
+import quantityReducer from './redux/quantitySlice';
+import cartReducer from './redux/cartSlice';
+import drawerReducer from './redux/drawerSlice';
 
 // Create the Redux store
 const store = configureStore({
-  reducer: persistReducer(
-    {
-      key: 'root',
-      storage,
-    },
-    rootReducer
-  ),
+  reducer: {
+    heading: headingReducer,
+    sidebar: sidebarReducer,
+    popup: popupReducer,
+    status: statusReducer,
+    Products: selectedProductsReducer,
+    form: FormDetailsReducer,
+    quantity: quantityReducer,
+    cart: cartReducer,
+    drawer: drawerReducer
+  },
 });
 
-export const persistor = persistStore(store);
+// export const persistor = persistStore(store);
 
 export default store;

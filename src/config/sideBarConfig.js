@@ -40,19 +40,16 @@ export const SideMenuConfig = {
 		title: 'Vehicle Transaction',
 		icon: PeopleManagement,
 		child: {
-			15: { title: 'Sell Vehicle', path: '/people/Admin' },
-			16: { title: 'Rent Vehicle', path: '/people/Vendor' },
-			// 17: { title: 'Sellers', path: '/Sellers', icon: Messages },
-			// 18: { title: 'Delivery Partner', path: '/people/DeliveryPartner' },
-			// 19: { title: 'Customers', path: '/people/Customers' },
+			15: { title: 'Rent Vehicle', path: '/rentVehicles' },
+			16: { title: 'Sell Vehicle', path: '/sellVehicles' },
 		},
 	},
 	20: {
 		title: 'Vehicle Inspection',
 		icon: DiscountManagement,
 		child: {
-			21: { title: 'Pre-trip Inspection', path: '/discount/Coupons' },
-			22: { title: 'Post-trip Inspection', path: '/discount/Wallets' },
+			21: { title: 'Daily Route', path: '/dailyRoutes' },
+			22: { title: 'Vehicle Package Booking', path: '/packageBooking' },
 		
 		},
 	},
@@ -69,7 +66,7 @@ export const SideMenuConfig = {
 	},
 	29: {
 		title: 'Available Drivers',
-		path: '/onlyPosUSers',
+		path: '/availableDrivers',
 		icon: Notification,
 	},
 	30: {

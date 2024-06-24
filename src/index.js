@@ -6,16 +6,16 @@ import App from './App';
 import store from './store';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
-import {NextUIProvider} from "@nextui-org/react";
+import { NextUIProvider } from "@nextui-org/react";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <NextUIProvider>
-    <Provider store={store}>
-      <App />
-      </Provider>
-    </NextUIProvider>
+      <NextUIProvider>
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </NextUIProvider>
     </BrowserRouter>
 
   </React.StrictMode>

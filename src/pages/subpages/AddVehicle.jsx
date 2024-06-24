@@ -14,10 +14,10 @@ const labels = [
 
     { name: 'bodyName', label: 'Body Name', type: 'text', rules: [{ required: true, message: 'Please enter Body name' }] },
     { name: 'type', label: 'Vehicle Type', type: 'select', options: ["CAR", "TRUCK", "BUS", "TAMPO"], rules: [{ required: true, message: 'Please select one type' }] },
-    { name: 'chassIsBrand', label: 'Is Brand ?', type: 'boolean', rules: [{ required: true, message: 'Select one' }] },
-    { name: 'isAC', label: 'Is AC ?', type: 'boolean', rules: [{ required: true, message: 'Select one' }] },
-    { name: 'isForRent', label: 'Is for Rent ?', type: 'boolean', rules: [{ required: true, message: 'Select one' }] },
-    { name: 'isForSell', label: 'Is for Sell ?', type: 'boolean', rules: [{ required: true, message: 'Select one' }] },
+    { name: 'chassIsBrand', label: 'Is Brand ?', type: 'select', options: [true, false], rules: [{ required: true, message: 'Select one' }] },
+    { name: 'isAC', label: 'Is AC ?', type: 'select', options: [true, false], rules: [{ required: true, message: 'Select one' }] },
+    { name: 'isForRent', label: 'Is for Rent ?',type: 'select', options: [true, false], rules: [{ required: true, message: 'Select one' }] },
+    { name: 'isForSell', label: 'Is for Sell ?',type: 'select', options: [true, false], rules: [{ required: true, message: 'Select one' }] },
 
     { name: 'photos', label: 'Vehicle Photo', type: 'file', rules: [{ required: true, message: 'Please provide the photo of driver' }] },
 ];
@@ -59,9 +59,10 @@ function AddVehicle() {
                                         <Select
                                             placeholder="None"
                                         >
+                                            {/* {} */}
                                             {field.options.map((option) => (
                                                 <Option key={option} value={option}>
-                                                    {option}
+                                                    {option===true?"Yes":option===false?"No":option}
                                                 </Option>
                                             ))}
                                         </Select>
