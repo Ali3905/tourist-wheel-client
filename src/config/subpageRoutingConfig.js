@@ -10,6 +10,7 @@ import Notifications from '../pages/notifications';
 import AddCleaner from "../pages/subpages/AddCleaner.jsx";
 import AddTechnician from "../pages/subpages/AddTechnician.jsx";
 import AddVehicle from "../pages/subpages/AddVehicle.jsx";
+import AddDailyRoute from "../pages/subpages/AddDailyRoute.jsx";
 export const SubpageRoutingConfig = [
 	
 	{
@@ -36,6 +37,11 @@ export const SubpageRoutingConfig = [
 		name: 'Add Vehicle',
 		path: '/addVehicle',
 		component: <AddVehicle />,
+	},
+	{
+		name: 'Add Daily Route',
+		path: '/addDailyRoute',
+		component: <AddDailyRoute />,
 	},
 	{
 		name: 'Add Admin',
