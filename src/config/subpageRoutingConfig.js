@@ -1,16 +1,10 @@
 import AddDriver from "../pages/subpages/AddDriver"
-import AddAdmin from "../pages/subpages/addAdmin"
-import AddDeliveryPartner from "../pages/subpages/addDeliveryPartner"
-import Refund from '../pages/refund';
-import AddProduct from "../pages/subpages/addProduct/addProduct.jsx";
-import Coupons from '../pages/discountManagement/coupons';
-import Wallets from '../pages/discountManagement/wallets';
-import AddSeller from "../pages/subpages/addSeller.jsx";
 import Notifications from '../pages/notifications';
 import AddCleaner from "../pages/subpages/AddCleaner.jsx";
 import AddTechnician from "../pages/subpages/AddTechnician.jsx";
 import AddVehicle from "../pages/subpages/AddVehicle.jsx";
 import AddDailyRoute from "../pages/subpages/AddDailyRoute.jsx";
+import UpdateDailyRoute from "../pages/Vehicle Inspection/UpdateDailyRoute.jsx";
 export const SubpageRoutingConfig = [
 	
 	{
@@ -34,8 +28,23 @@ export const SubpageRoutingConfig = [
 		component: <AddTechnician />,
 	},
 	{
-		name: 'Add Vehicle',
-		path: '/addVehicle',
+		name: 'Add Car',
+		path: '/addCar',
+		component: <AddVehicle />,
+	},
+	{
+		name: 'Add Bus',
+		path: '/addBus',
+		component: <AddVehicle />,
+	},
+	{
+		name: 'Add Tampo Traveler',
+		path: '/addTampo',
+		component: <AddVehicle />,
+	},
+	{
+		name: 'Add Truck',
+		path: '/addTruck',
 		component: <AddVehicle />,
 	},
 	{
@@ -44,28 +53,11 @@ export const SubpageRoutingConfig = [
 		component: <AddDailyRoute />,
 	},
 	{
-		name: 'Add Admin',
-		path: '/addAdmin',
-		component: <AddAdmin />,
+		name: 'Update Daily Route',
+		path: '/updateDailyRoute',
+		component: <UpdateDailyRoute />,
 	},
-	{
-		name: 'Add DeliveryPartner',
-		path: '/AddDeliveryPartner',
-		component: <AddDeliveryPartner />,
-	},
-	{
-		name: 'Add Seller',
-		path: '/AddSeller',
-		component: <AddSeller />,
-	},
-	{
-		name: 'Add Product ( convert multiple card in single itself using tags select)',
-		path: '/AddProduct',
-		component: <AddProduct />,
-	},
-	{ name: 'Coupons', path: '/discount/Coupons', component: <Coupons />},
-	{ name: 'Wallets', path: '/discount/Wallets', component: <Wallets />},
-	{ name: 'Refund', path: '/Refund', component: <Refund /> },
+	
 	{
 		name: ' Create Notifications',
 		path: '/Notifications',

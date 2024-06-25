@@ -29,25 +29,40 @@ function AddButton() {
   let isCondition11 = false;
 
   switch (selectedIndex) {
-    case 3:
+    case 4:
       buttonText = "Add Employee";
       break;
-    case 4:
+    case 5:
       buttonText = "Add Driver";
       break;
-    case 5:
+    case 6:
       buttonText = "Add Cleaner"
       break;
     case 8:
       buttonText = "Add Vehicle"
       break;
-    case 21:
+    case 9:
+      buttonText = "Add Vehicle"
+      break;
+    case 10:
+      buttonText = "Add Vehicle"
+      break;
+    case 11:
+      buttonText = "Add Vehicle"
+      break;
+    case 17:
       buttonText = "Add Daily Route"
       break;
-    case 22:
+    case 1:
+      buttonText = "Add Daily Route"
+      break;
+    case 18:
       buttonText = "Add Package Booking"
       break;
-    case 32:
+    case 2:
+      buttonText = "Add Package Booking"
+      break;
+    case 19:
       buttonText = "Add Technician"
       break;
     default:
@@ -60,19 +75,19 @@ function AddButton() {
   };
 
   const handleEvents = () => {
-    if (selectedIndex === 3) {
+    if (selectedIndex === 4) {
       navigate("/addEmployee")
-    } else if (selectedIndex === 4) {
-      navigate('/addDriver')
     } else if (selectedIndex === 5) {
+      navigate('/addDriver')
+    } else if (selectedIndex === 6) {
       navigate('/addCleaner')
-    } else if (selectedIndex === 8) {
+    } else if (selectedIndex === 12) {
       navigate('/addVehicle')
-    }  else if (selectedIndex === 21) {
+    }  else if (selectedIndex === 17 || selectedIndex === 1) {
       navigate('/addDailyRoute')
-    } else if (selectedIndex === 22) {
+    } else if (selectedIndex === 18 || selectedIndex === 2) {
       navigate('/addPackageBooking')
-    } else if (selectedIndex === 32) {
+    } else if (selectedIndex === 19) {
       navigate('/addTechnician')
     } else {
       handleClosePopup();
@@ -81,7 +96,7 @@ function AddButton() {
 
   return (
     <div>
-      <StyledButton isCondition11={isCondition11} onClick={handleEvents}>{buttonText}</StyledButton>
+      <StyledButton style={{whiteSpace : "nowrap", minWidth : "max-content", paddingLeft : "5px", paddingRight : "5px"}} isCondition11={isCondition11} onClick={handleEvents}>{buttonText}</StyledButton>
     </div>
   );
 }

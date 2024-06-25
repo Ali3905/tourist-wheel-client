@@ -1,6 +1,5 @@
 import { React, useState, useSelector, useDispatch, Form, useLocation, message, Outlet } from '../../GlobalImports';
 import * as Styled from '../../components/formButton';
-import { setFormDetails } from '../../redux/formSlice';
 
 
 //table 
@@ -10,6 +9,7 @@ import Search from '../../components/search';
 import Sort from '../../components/sort';
 import { columnsForCouponTable, columnsForWalletsTable, columnsForRefundTable, RefundDummyData, CouponDummyData, WalletDummyData } from '../../jsonData/tableData';
 import CustomTablePagination from '../../components/CustomTablePagination';
+import { addDriverAsync } from '../../redux/driversSlice';
 
 
 
@@ -23,6 +23,7 @@ const MainPage = () => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
   const filteredcolumnsForCouponTable = columnsForCouponTable
+
   const handleFilterChange = ({ column, fromValue, toValue }) => {
     const formatDate = (date) => date ? new Date(date).toLocaleDateString() : null;
 
@@ -90,25 +91,40 @@ const MainPage = () => {
       { id: 'form2', path: '/addCleaner', formType: 'cleaner' },
       { id: 'form3', path: '/addVehcile', formType: 'vehcile' },
       { id: 'form4', path: '/addTechnician', formType: 'technician' },
-      { id: 'form5', path: '/discount/Coupons', formType: 'coupons' },
-      { id: 'form6', path: '/discount/Wallets', formType: 'wallets' },
       { id: 'form8', path: '/Refund', formType: 'refund' },
     ];
 
     const currentFormConfig = formsConfig.find((config) => config.path === location.pathname);
     const currentFormType = currentFormConfig ? currentFormConfig.formType : 'form';
 
-    const entityName = currentFormType.charAt(0).toUpperCase() + currentFormType.slice(1);
-    const successMessage = `${entityName} ${isSuccess ? 'added' : 'addition failed. Please try again.'} successfully!`;
-    message[isSuccess ? 'success' : 'error'](successMessage);
-
     const mergedValues = { ...values, ...files };
 
+    const formData = new FormData();
+
+    // Iterate over the properties of the object
+    for (const key in mergedValues) {
+      // Check if the property is not from prototype chain
+      if (mergedValues.hasOwnProperty(key)) {
+        // Append each value to the FormData object
+        formData.append(key, mergedValues[key]);
+      }
+    }
+
+    if (currentFormType === "driver") {
+      const res = dispatch(addDriverAsync(formData))
+      console.log({res})
+    }
+
+    const entityName = currentFormType.charAt(0).toUpperCase() + currentFormType.slice(1);
+    const successMessage = `${entityName} ${isSuccess ? 'added' : 'addition failed. Please try again.'} successfully!`;
+    
+
+
     // Dispatching form details
-    dispatch(setFormDetails({
-      formType: currentFormType,
-      values : mergedValues
-    }));
+    // dispatch(setFormDetails({
+    //   formType: currentFormType,
+    //   values : mergedValues
+    // }));
   };
 
   return (

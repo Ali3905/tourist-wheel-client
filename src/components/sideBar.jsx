@@ -128,7 +128,7 @@ dispatch(setSelectedTitle(matchedRoute?.name));
                       isActive={isItemActive(item.path, item.child)}
                     />
                   </div>
-                  <div className={isItemActive(item.path, item.child) ? 'active' : ''}>
+                  <div style={{ fontWeight : "500" }} className={isItemActive(item.path, item.child) ? 'active' : ''}>
                     {item.title}
                     {item.child && (
                       <Styled.ToggleIcon>

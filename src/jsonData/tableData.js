@@ -1518,6 +1518,7 @@ export const columnsForDailyRoutes = [
 ]
 
 export const dataForDailyRoutes = [{
+    "_id" : "1",
     "vehicle": dataForVehicles[0],
     "departurePlace": "Room 181",
     "destinationPlace": "PO Box 93739",
@@ -1529,6 +1530,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "2",
     "vehicle": dataForVehicles[0],
     "departurePlace": "7th Floor",
     "destinationPlace": "Apt 115",
@@ -1540,6 +1542,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "3",
     "vehicle": dataForVehicles[0],
     "departurePlace": "PO Box 70104",
     "destinationPlace": "18th Floor",
@@ -1551,6 +1554,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "4",
     "vehicle": dataForVehicles[0],
     "departurePlace": "Room 1678",
     "destinationPlace": "Apt 1200",
@@ -1562,6 +1566,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "5",
     "vehicle": dataForVehicles[0],
     "departurePlace": "PO Box 41069",
     "destinationPlace": "Room 948",
@@ -1573,6 +1578,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "6",
    "vehicle": dataForVehicles[0],
     "departurePlace": "15th Floor",
     "destinationPlace": "Apt 1773",
@@ -1584,6 +1590,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "7",
     "vehicle": dataForVehicles[0],
     "departurePlace": "PO Box 42597",
     "destinationPlace": "Suite 33",
@@ -1595,6 +1602,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "8",
     "vehicle": dataForVehicles[0],
     "departurePlace": "PO Box 9801",
     "destinationPlace": "14th Floor",
@@ -1606,6 +1614,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "9",
     "vehicle": dataForVehicles[0],
     "departurePlace": "PO Box 2747",
     "destinationPlace": "9th Floor",
@@ -1617,6 +1626,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "10",
     "vehicle": dataForVehicles[0],
     "departurePlace": "PO Box 67585",
     "destinationPlace": "PO Box 82967",
@@ -1628,6 +1638,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "11",
     "vehicle": dataForVehicles[0],
     "departurePlace": "Room 1917",
     "destinationPlace": "Suite 57",
@@ -1639,6 +1650,7 @@ export const dataForDailyRoutes = [{
         "beforeJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
         "afterJourneyPhotos": ["http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000", "http://dummyimage.com/156x100.png/dddddd/000000"],
   }, {
+    "_id" : "12",
     "vehicle": dataForVehicles[0],
     "departurePlace": "PO Box 17183",
     "destinationPlace": "Room 1563",
@@ -1890,3 +1902,10 @@ export const dataForPackageBooking = [{
     "note": "1/2",
     "instructions": "() { 0; }; touch /tmp/blns.shellshock1.fail;"
   }]
+
+
+  export const activeDailyRoute = (id) => {
+    const active = dataForDailyRoutes.filter(route => route._id === id)[0]
+    // console.log({active});
+    return active
+  }

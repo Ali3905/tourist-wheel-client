@@ -54,12 +54,6 @@ export const RoutingConfig = [
 		path: '/Overview',
 		component: <OverView />,
 	},
-	// { name: 'WebsiteManagement', path: '/managewebsite', component: <WebsiteManagement /> },
-	{
-		name: 'Orders',
-		path: '/Orders',
-		component: <OnlineOrders />,
-	},
 	{
 		name: 'Drivers',
 		path: '/drivers',

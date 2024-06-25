@@ -17,71 +17,75 @@ export const SideMenuConfig = {
 		icon: OverView,
 	},
 	1: {
-		title: 'Booking Details',
-		path: '/managewebsite',
+		title: 'Daily route vehicle',
+		path: '/dailyRoutes',
 		icon: WebsiteManagement
 	},
-	
 	2: {
+		title: 'Vehicle package booking',
+		path: '/packageBooking',
+		icon: WebsiteManagement
+	},
+
+	3: {
 		title: 'Staff Management',
 		icon: OrderManagement,
 		child: {
-			3: { title: 'Employees List', path: '/employees' },
-			4: { title: 'Drivers List', path: '/drivers' },
-			5: { title: 'Cleaners List', path: '/cleaners' },
+			4: { title: 'Employees List', path: '/employees' },
+			5: { title: 'Drivers List', path: '/drivers' },
+			6: { title: 'Cleaners List', path: '/cleaners' },
 		},
 	},
-	8: {
+	7: {
 		title: 'Vehicle Management',
-		path: "/vehicles",
-		icon: UserScreenManagement,
+		icon: OrderManagement,
+		child: {
+			8: { title: 'Add Car', path: '/addCar' },
+			9: { title: 'Add Bus', path: '/addBus' },
+			10: { title: 'Add Tampo traveler', path: '/addTampo' },
+			11: { title: 'Add Truck', path: '/addTruck' },
+		},
 	},
-	14: {
+	12: {
+		title: "All Vehicles",
+		icon: OrderManagement,
+		path: "/vehicles"
+	},
+	13: {
 		title: 'Vehicle Transaction',
 		icon: PeopleManagement,
 		child: {
+			14: { title: 'Sell Vehicle', path: '/sellVehicles' },
 			15: { title: 'Rent Vehicle', path: '/rentVehicles' },
-			16: { title: 'Sell Vehicle', path: '/sellVehicles' },
 		},
 	},
-	20: {
+	16: {
 		title: 'Vehicle Inspection',
 		icon: DiscountManagement,
 		child: {
-			21: { title: 'Daily Route', path: '/dailyRoutes' },
-			22: { title: 'Vehicle Package Booking', path: '/packageBooking' },
-		
+			17: { title: 'Daily Route', path: '/dailyRoutes' },
+			18: { title: 'Vehicle Package Booking', path: '/packageBooking' },
+
 		},
 	},
-	
+	19: {
+		title: 'Available Drivers',
+		path: '/availableDrivers',
+		icon: Notification,
+	},
+	20: {
+		title: "Technician Support",
+		path: "/technicians",
+
+	},
 	27: {
 		title: 'Vehicle Documents',
 		path: '/ShutdownRequest',
 		icon: ShutDownRequest,
 	},
 	28: {
-		title: 'Vehicle Maintainance',
+		title: 'Vehicle Servicing History',
 		path: '/Notifications',
 		icon: Notification,
-	},
-	29: {
-		title: 'Available Drivers',
-		path: '/availableDrivers',
-		icon: Notification,
-	},
-	30: {
-		title: 'Daily Vehicles',
-		path: '/TransferHistory',
-		icon: Notification,
-	},
-	31: {
-		title: 'Tour Vehicles',
-		path: '/TransferHistory',
-		icon: Notification,
-	},
-	32 : {
-		title : "Technician Support",
-		path : "/technicians",
-
 	}
 };

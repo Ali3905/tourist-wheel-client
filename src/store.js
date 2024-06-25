@@ -9,6 +9,8 @@ import FormDetailsReducer from './redux/formSlice'
 import quantityReducer from './redux/quantitySlice';
 import cartReducer from './redux/cartSlice';
 import drawerReducer from './redux/drawerSlice';
+import driversSlice from './redux/driversSlice';
+import technicianSlice from './redux/technicianSlice';
 
 // Create the Redux store
 const store = configureStore({
@@ -21,7 +23,9 @@ const store = configureStore({
     form: FormDetailsReducer,
     quantity: quantityReducer,
     cart: cartReducer,
-    drawer: drawerReducer
+    drawer: drawerReducer,
+    drivers : driversSlice,
+    technicians : technicianSlice
   },
 });
 

@@ -24,7 +24,6 @@ const AnimatedHeading = styled.h1`
 
 function Heading() {
   const selectedTitle = useSelector((state) => state.heading.selectedTitle);
-  console.log(selectedTitle , "selectedTitle")
   const [key, setKey] = useState(0);
 
   useEffect(() => {

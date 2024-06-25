@@ -57,6 +57,9 @@ const CustomTable = ({ columns, data }) => {
     const handleViewClick = (col, row) => {
         console.log('View clicked for :', col.label, "of", row.name);
     };
+    const handleUpdateClick = (row) => {
+        navigate(`/updateDailyRoute?routeId=${row._id}`)
+    }
     const HoverableTableRow = styled(MuiTableRow)`
     &:hover {
         background-color: #ffdcba; 
@@ -70,7 +73,7 @@ const CustomTable = ({ columns, data }) => {
                 <TableHead>
                     <TableRow >
                         {columns.map((column) => (
-                            <TableCell key={column.id}>{column.label}</TableCell>
+                            <TableCell style={{whiteSpace : "nowrap"}} key={column.id}>{column.label}</TableCell>
                         ))}
                     </TableRow>
                 </TableHead>
@@ -99,6 +102,10 @@ const CustomTable = ({ columns, data }) => {
                                                     <>
                                                         {renderStatusCell(row)}
                                                     </>
+                                                ) : column.id === "update" ? (
+                                                    <TableCell>
+                                                        <StyledViewButton onClick={()=>handleUpdateClick(row)}>Update</StyledViewButton>
+                                                    </TableCell>
                                                 ) : typeof row[column.id] === 'object' ? 
                                                 <TableCell onClick={() => navigate(`/Details/${row.id}`)}>{row?.[column.id]?.[column.fieldId]}</TableCell>
                         
@@ -131,7 +138,7 @@ const CustomTable = ({ columns, data }) => {
                                                                             <TableCell> <HoverPopover timings={row[column.id]} /></TableCell>
 
                                                                         ) : (
-                                                                            <TableCell onClick={() => navigate(`/Details/${row.id}`)}>{row[column.id]}</TableCell>
+                                                                            <TableCell style={{whiteSpace : "nowrap"}} onClick={() => navigate(`/Details/${row.id}`)}>{row[column.id]}</TableCell>
                                                                         )
                                                                     )}
                                     </React.Fragment>

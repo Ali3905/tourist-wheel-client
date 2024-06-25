@@ -10,34 +10,8 @@ const DailyRoute = () => {
   const [filteredData, setFilteredData] = useState(data);
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
-  const filteredcolumns = columns
+  const filteredcolumns = [...columns, {id : "update", label : "Action"}]
 
-
-//   const handleFilterChange = ({ column, fromValue, toValue }) => {
-//     const formatDate = (date) => date ? new Date(date).toLocaleDateString() : null;
-
-//     const newFilteredData = filteredData.filter((item) => {
-//       const columnValue = formatDate(item[column]);
-//       const columnValuestring = item[column];
-
-//       if (['customerEmail', 'name', 'status'].includes(column.toLowerCase())) {
-//         return (
-//           (!fromValue || columnValuestring.toLowerCase().includes(fromValue.toLowerCase())) &&
-//           (!toValue || columnValuestring.toLowerCase().includes(toValue.toLowerCase()))
-//         );
-//       } else if (column === "duePayDate") {
-//         const fromDate = formatDate(fromValue);
-//         const toDate = formatDate(toValue);
-
-//         return !fromDate || !toDate || (columnValue >= fromDate && columnValue <= toDate);
-//       } else {
-//         return (!fromValue || Number(columnValuestring) >= Number(fromValue)) &&
-//           (!toValue || Number(columnValuestring) <= Number(toValue));
-//       }
-//     });
-//     setPage(0);
-//     setFilteredData(newFilteredData);
-//   };
 
   const handleSearchChange = (value) => {
     const newFilteredData = data.filter((item) =>
