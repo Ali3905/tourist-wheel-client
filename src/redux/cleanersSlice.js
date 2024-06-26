@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { message } from "../GlobalImports";
 import axios from "axios";
-import { message } from "../GlobalImports"
 
 
 
@@ -9,57 +9,55 @@ const initialState = {
     data: []
 }
 
-const technicianSlice = createSlice({
-    name: "technicians",
+const cleanersSlice = createSlice({
+    name: "cleaners",
     initialState,
     extraReducers: (builder) => {
-
         builder
-            .addCase(getTechniciansAsync.pending,
+            .addCase(getCleanersAsync.pending,
                 (state) => {
                     // state.status = "pending"
                 })
-            .addCase(getTechniciansAsync.fulfilled,
+            .addCase(getCleanersAsync.fulfilled,
                 (state, action) => {
                     state.status = "fulfilled"
                     state.data = action.payload
-                    console.log(state.data);
                 })
-            .addCase(addTechnicianAsync.fulfilled,
+            .addCase(addCleanerAsync.fulfilled,
                 (state, action) => {
-                    state.status = "fulfilled"
                     state.data.push(action.payload)
-                })
+            })
     },
 });
 
-export const getTechniciansAsync = createAsyncThunk(
-    "counter/getTechnicians",
+
+export const getCleanersAsync = createAsyncThunk(
+    "counter/getCleaners",
     async () => {
         const res = await axios({
             method: "get",
-            url: "https://tourist-wheel-server.vercel.app/api/technician"
+            url: "https://tourist-wheel-server.vercel.app/api/cleaner"
         })
         return res.data.data;
     }
 );
 
-export const addTechnicianAsync = createAsyncThunk(
-    "counter/addTechnician",
+export const addCleanerAsync = createAsyncThunk(
+    "counter/addCleaner",
     async (data) => {
         try {
             const res = await axios({
                 method: "post",
-                url: "https://tourist-wheel-server.vercel.app/api/technician",
+                url: "https://tourist-wheel-server.vercel.app/api/cleaner",
                 data: data
             })
-            message[res.data.success ? 'success' : 'error']("Technician Created successfully");
+            message[res.data.success ? 'success' : 'error']("Cleaner Created successfully");
             return res.data.data;
         } catch (error) {
-            message['error']("Could not create Technician")
+            message['error']("Could not create Cleaner")
         }
     }
 );
 
 
-export default technicianSlice.reducer;
+export default cleanersSlice.reducer;

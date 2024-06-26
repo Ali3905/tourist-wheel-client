@@ -20,11 +20,13 @@ const labels = [
     { name: 'isAC', label: 'Is AC ?', type: 'select', options: [true, false], rules: [{ required: true, message: 'Select one' }] },
     { name: 'isForRent', label: 'Is for Rent ?',type: 'select', options: [true, false], rules: [{ required: true, message: 'Select one' }] },
     { name: 'isForSell', label: 'Is for Sell ?',type: 'select', options: [true, false], rules: [{ required: true, message: 'Select one' }] },
+    { name: 'noOfTyres', label: 'No. Of Tyres',type: 'number', rules: [{ required: true, message: 'Enter the number of tyres of truck' }] },
+    { name: 'weightInKGS', label: 'Weight in KGs',type: 'number', rules: [{ required: true, message: 'Enter the weight of truck' }] },
 
     { name: 'photos', label: 'Vehicle Photo', type: 'file', rules: [{ required: true, message: 'Please provide the photo of driver' }] },
 ];
 
-function AddVehicle() {
+function AddTruck() {
     const { handleFileChange } = useOutletContext();
 
     const formItemLayout = {
@@ -99,4 +101,4 @@ function AddVehicle() {
     );
 }
 
-export default AddVehicle;
+export default AddTruck;

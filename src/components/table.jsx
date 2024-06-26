@@ -46,19 +46,19 @@ const CustomTable = ({ columns, data }) => {
         return (
             <TableCell>
                 <Status
-                    id={row.id}
-                    status={statusData[row.id]}
-                    buttonStatus={row.status}
+                    id={row?.id}
+                    status={statusData[row?.id]}
+                    buttonStatus={row?.status}
                 />
             </TableCell>
         );
     };
 
     const handleViewClick = (col, row) => {
-        console.log('View clicked for :', col.label, "of", row.name);
+        console.log('View clicked for :', col.label,);
     };
     const handleUpdateClick = (row) => {
-        navigate(`/updateDailyRoute?routeId=${row._id}`)
+        
     }
     const HoverableTableRow = styled(MuiTableRow)`
     &:hover {
@@ -68,7 +68,9 @@ const CustomTable = ({ columns, data }) => {
 `;
     return (
 
-        <TableContainer component={Paper}>
+        <>
+        {
+            data ? <TableContainer component={Paper}>
             <Table>
                 <TableHead>
                     <TableRow >
@@ -78,23 +80,23 @@ const CustomTable = ({ columns, data }) => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {data.map((row) => (
-                        <HoverableTableRow key={row.id}>
+                    {data?.map((row) => (
+                        <HoverableTableRow key={row?.id}>
                             {columns.map((column) => {
                                 return (
                                     <React.Fragment key={column.id}>
                                         {column.id === "photo" || column.id === "photos" || column.id === "afterJourneyPhotos" || column.id === "beforeJourneyPhotos" ?
                                             <TableCell>
-                                                <StyledViewButton onClick={() => handleViewClick(column, row)}>View</StyledViewButton>
+                                                <StyledViewButton >View</StyledViewButton>
                                             </TableCell> : column.id === "aadharCard" ?
                                                 <TableCell>
-                                                    <StyledViewButton onClick={() => handleViewClick(column, row)}>View</StyledViewButton>
+                                                    <StyledViewButton >View</StyledViewButton>
                                                 </TableCell> :
-                                                row[column.id] === true ? (
+                                                row?.[column.id] === true ? (
                                                     <TableCell>
                                                         <StyledViewButton>Yes</StyledViewButton>
                                                     </TableCell>
-                                                ) : row[column.id] === false ? (
+                                                ) : row?.[column.id] === false ? (
                                                     <TableCell>
                                                         <StyledViewButton>No</StyledViewButton>
                                                     </TableCell>
@@ -106,8 +108,8 @@ const CustomTable = ({ columns, data }) => {
                                                     <TableCell>
                                                         <StyledViewButton onClick={()=>handleUpdateClick(row)}>Update</StyledViewButton>
                                                     </TableCell>
-                                                ) : typeof row[column.id] === 'object' ? 
-                                                <TableCell onClick={() => navigate(`/Details/${row.id}`)}>{row?.[column.id]?.[column.fieldId]}</TableCell>
+                                                ) : typeof row?.[column.id] === 'object' ? 
+                                                <TableCell onClick={() => navigate(`/Details/${row?.id}`)}>{row?.[column.id]?.[column.fieldId]}</TableCell>
                         
                                                     : column.label === "Transfter" ? (
                                                         <>
@@ -115,7 +117,7 @@ const CustomTable = ({ columns, data }) => {
                                                         </>
                                                     ) : column.label === "Acceptance" ? (
 
-                                                        <TableCell><Status status={row[column.id]} /></TableCell>
+                                                        <TableCell><Status status={row?.[column.id]} /></TableCell>
 
                                                     )
                                                         : column.label === "Action" ? (
@@ -124,21 +126,21 @@ const CustomTable = ({ columns, data }) => {
 
                                                         ) : column.label === "Partner" ? (
 
-                                                                <TableCell>< Highlate status={'Partner'}>{row[column.id]}</Highlate></TableCell>
+                                                                <TableCell>< Highlate status={'Partner'}>{row?.[column.id]}</Highlate></TableCell>
 
 
                                                             ) : column.label === "Success" ? (
-                                                                    <TableCell>< Highlate status={'Success'}>{row[column.id]}</Highlate></TableCell>
+                                                                    <TableCell>< Highlate status={'Success'}>{row?.[column.id]}</Highlate></TableCell>
                                                                 ): column.label === "Failure" ? (
-                                                                        <TableCell>< Highlate status={'Failure'}>{row[column.id]}</Highlate></TableCell>
+                                                                        <TableCell>< Highlate status={'Failure'}>{row?.[column.id]}</Highlate></TableCell>
                                                                     ) : (
                                                                         column.id === "assigneeDetails" ? (
-                                                                            <TableCell> <ClickPopover assignee={row[column.id]} /></TableCell>
+                                                                            <TableCell> <ClickPopover assignee={row?.[column.id]} /></TableCell>
                                                                         ) : column.id === "orderTimings" ? (
-                                                                            <TableCell> <HoverPopover timings={row[column.id]} /></TableCell>
+                                                                            <TableCell> <HoverPopover timings={row?.[column.id]} /></TableCell>
 
                                                                         ) : (
-                                                                            <TableCell style={{whiteSpace : "nowrap"}} onClick={() => navigate(`/Details/${row.id}`)}>{row[column.id]}</TableCell>
+                                                                            <TableCell style={{whiteSpace : "nowrap"}} onClick={() => navigate(`/Details/${row?.id}`)}>{row?.[column.id]}</TableCell>
                                                                         )
                                                                     )}
                                     </React.Fragment>
@@ -152,7 +154,9 @@ const CustomTable = ({ columns, data }) => {
 
 
             </Table>
-        </TableContainer>
+        </TableContainer> : "Loading..."
+        }
+        </>
 
     );
 };

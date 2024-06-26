@@ -10,6 +10,11 @@ import Sort from '../../components/sort';
 import { columnsForCouponTable, columnsForWalletsTable, columnsForRefundTable, RefundDummyData, CouponDummyData, WalletDummyData } from '../../jsonData/tableData';
 import CustomTablePagination from '../../components/CustomTablePagination';
 import { addDriverAsync } from '../../redux/driversSlice';
+import { useNavigate } from 'react-router-dom';
+import { addCleanerAsync } from '../../redux/cleanersSlice';
+import { addEmployeeAsync } from '../../redux/employeesSlice';
+import { addTechnicianAsync } from '../../redux/technicianSlice';
+import { addVehicleAsync } from '../../redux/vehiclesSlice';
 
 
 
@@ -23,6 +28,7 @@ const MainPage = () => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
   const filteredcolumnsForCouponTable = columnsForCouponTable
+  const navigate = useNavigate()
 
   const handleFilterChange = ({ column, fromValue, toValue }) => {
     const formatDate = (date) => date ? new Date(date).toLocaleDateString() : null;
@@ -85,17 +91,20 @@ const MainPage = () => {
   };
 
   const onFinish = (values) => {
-    const isSuccess = true;
+    // const isSuccess = true;
     const formsConfig = [
-      { id: 'form1', path: '/addDriver', formType: 'driver' },
-      { id: 'form2', path: '/addCleaner', formType: 'cleaner' },
-      { id: 'form3', path: '/addVehcile', formType: 'vehcile' },
-      { id: 'form4', path: '/addTechnician', formType: 'technician' },
-      { id: 'form8', path: '/Refund', formType: 'refund' },
+      { id: 'addDriver', path: '/addDriver', formType: 'driver' },
+      { id: 'addCleaner', path: '/addCleaner', formType: 'cleaner' },
+      { id: 'addCar', path: '/addCar', formType: 'car' },
+      { id: 'addBus', path: '/addBus', formType: 'bus' },
+      { id: 'addTampo', path: '/addTampo', formType: 'tampo' },
+      { id: 'addTruck', path: '/addTruck', formType: 'truck' },
+      { id: 'addTechnician', path: '/addTechnician', formType: 'technician' },
+      { id: 'addEmployee', path: '/addEmployee', formType: 'employee' },
     ];
 
     const currentFormConfig = formsConfig.find((config) => config.path === location.pathname);
-    const currentFormType = currentFormConfig ? currentFormConfig.formType : 'form';
+    // const currentFormType = currentFormConfig ? currentFormConfig.formType : 'form';
 
     const mergedValues = { ...values, ...files };
 
@@ -110,14 +119,39 @@ const MainPage = () => {
       }
     }
 
-    if (currentFormType === "driver") {
-      const res = dispatch(addDriverAsync(formData))
-      console.log({res})
+    if (currentFormConfig.id === "addDriver") {
+      dispatch(addDriverAsync(formData))
+      navigate("/drivers")
+    } else if (currentFormConfig.id === "addCleaner") {
+      dispatch(addCleanerAsync(formData))
+      navigate("/cleaners")
+    } else if (currentFormConfig.id === "addEmployee") {
+      dispatch(addEmployeeAsync(formData))
+      navigate("/employees")
+    } else if (currentFormConfig.id === "addTechnician") {
+      dispatch(addTechnicianAsync(values))
+      navigate("/technicians")
+    } else if (currentFormConfig.id === "addCar") {
+      formData.append("type", "CAR")
+      dispatch(addVehicleAsync(formData))
+      navigate("/vehicles")
+    } else if (currentFormConfig.id === "addBus") {
+      formData.append("type", "BUS")
+      dispatch(addVehicleAsync(formData))
+      navigate("/vehicles")
+    } else if (currentFormConfig.id === "addTampo") {
+      formData.append("type", "TAMPO")
+      dispatch(addVehicleAsync(formData))
+      navigate("/vehicles")
+    } else if (currentFormConfig.id === "addTruck") {
+      formData.append("type", "TRUCK")
+      dispatch(addVehicleAsync(formData))
+      navigate("/vehicles")
     }
 
-    const entityName = currentFormType.charAt(0).toUpperCase() + currentFormType.slice(1);
-    const successMessage = `${entityName} ${isSuccess ? 'added' : 'addition failed. Please try again.'} successfully!`;
-    
+    // const entityName = currentFormType.charAt(0).toUpperCase() + currentFormType.slice(1);
+    // const successMessage = `${entityName} ${isSuccess ? 'added' : 'addition failed. Please try again.'} successfully!`;
+
 
 
     // Dispatching form details

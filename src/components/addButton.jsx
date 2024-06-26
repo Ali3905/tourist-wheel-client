@@ -62,7 +62,7 @@ function AddButton() {
     case 2:
       buttonText = "Add Package Booking"
       break;
-    case 19:
+    case 20:
       buttonText = "Add Technician"
       break;
     default:
@@ -87,7 +87,7 @@ function AddButton() {
       navigate('/addDailyRoute')
     } else if (selectedIndex === 18 || selectedIndex === 2) {
       navigate('/addPackageBooking')
-    } else if (selectedIndex === 19) {
+    } else if (selectedIndex === 20) {
       navigate('/addTechnician')
     } else {
       handleClosePopup();

@@ -5,6 +5,8 @@ import AddTechnician from "../pages/subpages/AddTechnician.jsx";
 import AddVehicle from "../pages/subpages/AddVehicle.jsx";
 import AddDailyRoute from "../pages/subpages/AddDailyRoute.jsx";
 import UpdateDailyRoute from "../pages/Vehicle Inspection/UpdateDailyRoute.jsx";
+import AddEmployee from "../pages/subpages/AddEmployee.jsx";
+import AddTruck from "../pages/subpages/AddTruck.jsx";
 export const SubpageRoutingConfig = [
 	
 	{
@@ -20,7 +22,7 @@ export const SubpageRoutingConfig = [
 	{
 		name: 'Add Employee',
 		path: '/addEmployee',
-		component: <AddCleaner />,
+		component: <AddEmployee />,
 	},
 	{
 		name: 'Add Technician',
@@ -45,7 +47,7 @@ export const SubpageRoutingConfig = [
 	{
 		name: 'Add Truck',
 		path: '/addTruck',
-		component: <AddVehicle />,
+		component: <AddTruck />,
 	},
 	{
 		name: 'Add Daily Route',

@@ -12,17 +12,17 @@ const labels = [
     { name: 'password', label: 'Password', type: 'password', rules: [{ required: true, message: 'Please enter your password' }] },
     { name: 'confirmPassword', label: 'Confirm Password', type: 'text', dependencies: ['password'], rules: [{ required: true, message: 'Please confirm your password' }, ({ getFieldValue }) => ({ validator(_, value) { if (!value || getFieldValue('password') === value) { return Promise.resolve(); } return Promise.reject(new Error('The two passwords do not match')); }, })] },
 
-    { name: 'mobileNumber', label: 'Mobile Number', type: 'text', rules: [{ required: true, message: 'Please enter your phone number', min: 10, max: 11 }] },
+    { name: 'mobileNumber', label: 'Mobile Number', type: 'text', rules: [{ required: true, message: 'Please enter phone number of employee', min: 10, max: 11 }] },
     { name: 'employeeType', label: 'Employee Type', type: 'select', options: ["MANAGER", "CLEANER", "OFFICE-BOY", "ACCOUNTANT", "TELECALLER"], rules: [{ required: true, message: 'Please enter the city' }] },
     { name: 'state', label: 'State', type: 'text', rules: [{ required: true, message: 'Please enter the state' }] },
 
-    { name: 'photo', label: 'Driver Photo', type: 'file', rules: [{ required: true, message: 'Please provide the photo of driver' }] },
+    { name: 'photo', label: 'Employee Photo', type: 'file', rules: [{ required: true, message: 'Please provide the photo of Employee' }] },
     { name: 'aadharCard', label: 'Aadhar Card', type: 'file', rules: [{ required: true, message: 'Please provide the photo of aadhar Card' }] },
 
 
 ];
 
-function AddCleaner() {
+function AddEmployee() {
     const { handleFileChange } = useOutletContext();
 
     const formItemLayout = {
@@ -96,4 +96,4 @@ function AddCleaner() {
     );
 }
 
-export default AddCleaner;
+export default AddEmployee;
